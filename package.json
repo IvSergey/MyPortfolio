@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "webpack": "^4.1.1"
+  },
+  "name": "MyPortfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/IvSergey/MyPortfolio.git",
+  "author": "IvSergey <imas.spb@mail.ru>",
+  "license": "MIT"
+}
