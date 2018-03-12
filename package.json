@@ -4,5 +4,11 @@
   "main": "index.js",
   "repository": "https://github.com/IvSergey/MyPortfolio.git",
   "author": "IvSergey <imas.spb@mail.ru>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts":{
+  	"start": "webpack"
+  },
+  "devDependencies": {
+    "webpack": "^4.1.1"
+  }
 }
