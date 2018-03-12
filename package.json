@@ -5,10 +5,12 @@
   "repository": "https://github.com/IvSergey/MyPortfolio.git",
   "author": "IvSergey <imas.spb@mail.ru>",
   "license": "MIT",
-  "scripts":{
-  	"start": "webpack"
+  "scripts": {
+  	"start": "webpack --watch",
+  	"serv": "static build"
   },
   "devDependencies": {
+    "node-static": "^0.7.10",
     "webpack": "^4.1.1"
   }
 }
