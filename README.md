@@ -12,5 +12,5 @@
 * Склонировать репозиторий: git clone https://github.com/IvSergey/MyPortfolio.git
 * Зайти в папку с проектом
 * Установить npm-зависимости: npm i
-* После установки npm-пакетов запустить dev-server: npm run-script dev
-* Собрать проект: npm run-script prod
+* После установки npm-пакетов запустить dev-server: yarn run start
+* Собрать проект: yarn run build
