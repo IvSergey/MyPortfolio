@@ -57,7 +57,7 @@ module.exports = {
         new CleanWebpackPlugin('build'),
         // Подключение отельных css файлов (когда не работает срабатывает fallback)
         new ExtractTextWebpackPlugin({
-            filename: "css/[name].css"
+            filename: "./css/[name].css"
         }),
         // автоматически выносит код из разных js и css файлов
         new webpack.optimize.CommonsChunkPlugin({
@@ -72,8 +72,8 @@ module.exports = {
         new webpack.ProvidePlugin({
           $: 'jquery',
           jQuery: 'jquery'
-        })
-        new UglifyJSPlugin()  // минификация js 
+        }),
+        new UglifyJsWebpackPlugin()  // минификация js 
     ],
     module: {
         rules: [
@@ -103,7 +103,7 @@ module.exports = {
           	},
 
           	{
-          		test: /\.(jpg|png|svg)$,
+          		test: /\.(jpg|png|svg)$/,
           		loader: 'file-loader',
           		options: {
           			name: 'img/[name].[ext]'
@@ -118,7 +118,7 @@ module.exports = {
                 options: {
                     fix: true
                 }            
-            },
-        ],
-    };
-};
+            }
+        ]
+    }
+}

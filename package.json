@@ -6,7 +6,7 @@
   "author": "IvSergey <imas.spb@mail.ru>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack -dev-server",
+    "start": "webpack-dev-server",
     "build": "webpack",
     "serv": "static build"
   },
@@ -28,7 +28,7 @@
     "style-loader": "^0.20.3",
     "stylelint": "^9.1.1",
     "stylelint-webpack-plugin": "^0.10.3",
-    "webpack": "^4.1.1",
+    "webpack": "^3.9.1",
     "webpack-cli": "^2.0.11",
     "webpack-dev-server": "^3.1.1"
   },
