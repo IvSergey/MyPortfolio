@@ -3,7 +3,7 @@ const path = require ('path');
 
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require ('html-webpack-plugin');
-const ExtractTextWebpackPlugin = require("extract-text-webpack-plugin");
+const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const UglifyJsWebpackPlugin = require('uglifyjs-webpack-plugin'); 
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -56,9 +56,9 @@ module.exports = {
         // Для очистки папки build
         new CleanWebpackPlugin('build'),
         // Подключение отельных css файлов (когда не работает срабатывает fallback)
-        new ExtractTextWebpackPlugin({
-            filename: "./css/[name].css"
-        }),
+        new ExtractTextWebpackPlugin('./css/[name].css'),
+          
+          
         // автоматически выносит код из разных js и css файлов
         new webpack.optimize.CommonsChunkPlugin({
         	name: 'common'
@@ -98,7 +98,7 @@ module.exports = {
            		test: /\.css$/,
             	use: ExtractTextWebpackPlugin.extract({
               		fallback: 'style-loader',
-              		use: ['css-loader']
+              		use: 'css-loader'
             	})
           	},
 

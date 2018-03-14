@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Авторизация</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="authorization">
+        <h1 class="authorization__title">Авторизуйтесь</h1>
+        <form action="" id="authorization-form">
+          <div class="form__content">
+            <label class="form__label" for="login"> 
+              <p class="form__icon">Л</p>
+              <input class="form__input" type="text" id="login" placeholder="Логин">
+            </label>
+          </div>
+          <div class="form__content">
+            <label class="form__label" for="password">
+              <p class="form__icon">П</p>
+              <input class="form__input" type="text" id="password" placeholder="Пароль">
+            </label>
+          </div>
+          <div class="form__content">
+            <label class="form__label" for="human">
+              <input class="form__checkbox" type="checkbox" id="human">
+              <p class="form__text">Я человек</p>
+            </label>
+          </div>
+          <p class="form__question">Вы точно не робот?</p>
+          <div class="form__content">
+            <div class="form__radio">
+              <label class="form__label-radio">
+                <input class="form__radio" type="radio" name="robot" value="yep">
+                <p class="form__text">Да</p>
+              </label>
+              <label class="form__label-radio">
+                <input class="form__radio" type="radio" name="robot" value="nope">
+                <p class="form__text">Не уверен</p>
+              </label>
+            </div>
+          </div>
+          <div class="form__content">
+            <button class="form__btn" type="button">На главную</button>
+            <button class="form__btn" type="button">Войти</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  <script type="text/javascript" src="./js/common.js"></script><script type="text/javascript" src="./js/index.js"></script></body>
+</html>
