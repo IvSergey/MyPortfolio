@@ -4827,10 +4827,6 @@ no-case@^2.2.0:
   dependencies:
     lower-case "^1.1.1"
 
-node-bin-setup@^1.0.0:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/node-bin-setup/-/node-bin-setup-1.0.6.tgz#4b5c9bb937ece702d7069b36ca78af4684677528"
-
 node-dir@0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/node-dir/-/node-dir-0.1.8.tgz#55fb8deb699070707fb67f91a460f0448294c77d"
@@ -4932,12 +4928,6 @@ node-static@^0.7.10:
     colors ">=0.6.0"
     mime "^1.2.9"
     optimist ">=0.3.4"
-
-node@^9.8.0:
-  version "9.8.0"
-  resolved "https://registry.yarnpkg.com/node/-/node-9.8.0.tgz#6f59b29e4333679fa820a0cee8b49b0c299ce008"
-  dependencies:
-    node-bin-setup "^1.0.0"
 
 nomnom@^1.8.1:
   version "1.8.1"
@@ -7479,7 +7469,7 @@ uglifyjs-webpack-plugin@^0.4.6:
     uglify-js "^2.8.29"
     webpack-sources "^1.0.1"
 
-uglifyjs-webpack-plugin@^1.2.2:
+uglifyjs-webpack-plugin@^1.2.2, uglifyjs-webpack-plugin@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/uglifyjs-webpack-plugin/-/uglifyjs-webpack-plugin-1.2.3.tgz#bf23197b37a8fc953fecfbcbab66e506f9a0ae72"
   dependencies:

@@ -89,8 +89,7 @@ module.exports = {
                 test: /\.scss$/,
                 use: ExtractTextWebpackPlugin.extract({
                 	publicPath: '../', // для того, чтобы пути к фоновым картинкам в css файле были правильными после сборки
-                	fallback: 'style-loader',
-                  	use: ['css-loader', 'sass-loader']
+          			use: ['css-loader', 'sass-loader'],
               	})
             },
 
