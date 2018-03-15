@@ -1,9 +1,11 @@
 // базовый модуль node.js  универсальный путь для разных платформ
 const path = require ('path');
 
+
+
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require ('html-webpack-plugin');
-const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJsWebpackPlugin = require('uglifyjs-webpack-plugin'); 
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -56,8 +58,9 @@ module.exports = {
         // Для очистки папки build
         new CleanWebpackPlugin('build'),
         // Подключение отельных css файлов (когда не работает срабатывает fallback)
-        new ExtractTextWebpackPlugin('./css/[name].css'),
-          
+        new ExtractTextPlugin({
+            filename: './css/[name].css'
+        }),
           
         // автоматически выносит код из разных js и css файлов
         new webpack.optimize.CommonsChunkPlugin({
@@ -87,17 +90,17 @@ module.exports = {
 
             {
                 test: /\.scss$/,
-                use: ExtractTextWebpackPlugin.extract({
+                use: ExtractTextPlugin.extract({
                 	publicPath: '../', // для того, чтобы пути к фоновым картинкам в css файле были правильными после сборки
-          			use: ['css-loader', 'sass-loader'],
+          			use: ['css-loader','sass-loader']
               	})
             },
 
           	{
            		test: /\.css$/,
-            	use: ExtractTextWebpackPlugin.extract({
+            	use: ExtractTextPlugin.extract({
               		fallback: 'style-loader',
-              		use: 'css-loader'
+              		use: ['css-loader']
             	})
           	},
 
@@ -105,7 +108,8 @@ module.exports = {
           		test: /\.(jpg|png|svg)$/,
           		loader: 'file-loader',
           		options: {
-          			name: 'img/[name].[ext]'
+          			name: 'img/[name].[ext]',
+          			pretty: true
           		},
           	},
 
