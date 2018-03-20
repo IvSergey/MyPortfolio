@@ -1,0 +1,168 @@
+// .about__content {
+//     width: 50%;
+//     display: flex;
+//     height: 100%;
+// }
+
+.about__triangles {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: -21px;
+    margin: 0 auto;
+
+    .triangles__left {
+        fill: #edebe6;
+    }
+
+    .triangles__right {
+        fill: #ebe8db;
+    }
+}
+
+.about__content-left {
+    background: #edebe6;
+}
+
+.about__content-right {
+    flex-direction: column;
+    background-color: #ebe8db;
+}
+
+.content-left__title {
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.content-left__about {
+    width: 100%;
+}
+
+    .content-left__ava {
+        width: 440px;
+        height: 390px;
+        
+}
+
+    .content-left__subtitle {
+        text-align: center;
+}
+
+
+.about__content-right {
+    .content-right__title {
+        text-align: center;
+    }
+}
+
+.skills-list{
+    list-style: none;
+}
+
+ .skills-row__title{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color:  rgba(94, 90, 85, 0.8);
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+ }
+
+.skills-row__item{
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+
+    .skill__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #e7a731;
+        font-weight: bold;
+    }
+
+    .row-chart__circles {
+    fill: none;
+    stroke-width: 15;
+    }
+    .circle__first {
+        stroke: #dfdcd5;
+    }
+    .circle__second {
+        stroke: #e7a731;
+        stroke-dasharray: .0010 282.6;
+        transition: all 1s;
+    }
+
+    .row-chart__circles .circle-0 {
+        stroke-dasharray: .001 282.6;
+     }
+     .row-chart__circles .circle-5 {
+       stroke-dasharray: 14.13 282.6;
+     }
+     .row-chart__circles .circle-10 {
+        stroke-dasharray: 28.26 282.6;
+     }
+     .row-chart__circles .circle-15 {
+        stroke-dasharray: 42.39 282.6;
+     }
+     .row-chart__circles .circle-20 {
+        stroke-dasharray: 56.52 282.6;
+     }
+     .row-chart__circles .circle-25 {
+        stroke-dasharray: 70.65 282.6;
+     }
+     .row-chart__circles .circle-30 {
+        stroke-dasharray: 84.78 282.6;
+     }
+     .row-chart__circles .circle-35 {
+        stroke-dasharray: 98.91 282.6;
+     }
+     .row-chart__circles .circle-40 {
+        stroke-dasharray: 113.04 282.6;
+     }
+     .row-chart__circles .circle-45 {
+        stroke-dasharray: 127.17 282.6;
+     }
+     .row-chart__circles .circle-50 {
+        stroke-dasharray: 141.3 282.6;
+     }
+     .row-chart__circles .circle-55 {
+        stroke-dasharray: 155.43 282.6;
+     }
+     .row-chart__circles .circle-60 {
+        stroke-dasharray: 169.56 282.6;
+     }
+     .row-chart__circles .circle-65 {
+        stroke-dasharray: 183.69 282.6;
+     }
+     .row-chart__circles .circle-70 {
+        stroke-dasharray: 197.82 282.6;
+     }
+     .row-chart__circles .circle-75 {
+        stroke-dasharray: 211.95 282.6;
+     }
+     .row-chart__circles .circle-80 {
+        stroke-dasharray: 226.08 282.6;
+     }
+     .row-chart__circles .circle-85 {
+        stroke-dasharray: 240.21 282.6;
+     }
+     .row-chart__circles .circle-90 {
+        stroke-dasharray: 254.34 282.6;
+     }
+     .row-chart__circles .circle-95 {
+        stroke-dasharray: 268.47 282.6;
+     }
+     .row-chart__circles .circle-100 {
+        stroke-dasharray: 282.6 282.6;
+     }
+}

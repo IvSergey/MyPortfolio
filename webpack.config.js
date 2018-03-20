@@ -1,3 +1,4 @@
+// process.traceDeprecation = true;
 // базовый модуль node.js  универсальный путь для разных платформ
 const path = require ('path');
 
@@ -116,8 +117,8 @@ module.exports = {
           	{
           		// Добавление префикса
                 test: /\.js$/,
-                enforce: "pre",
-                loader: "eslint-loader",
+                enforce: 'pre',
+                loader: 'eslint-loader',
                 options: {
                     fix: true
                 }            
