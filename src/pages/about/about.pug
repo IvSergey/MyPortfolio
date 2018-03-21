@@ -29,7 +29,7 @@ block content
         img(src="", alt="").section-title__pic
       .user.hero__user
         .user__pic
-          img(src="../../ava.jpg", alt="ava").user__pic-img
+          img(src=require("../../img/ava.jpg"), alt="ava").user__pic-img
         .user__description
           .user__name Сергей Иванов
           .user__info Личный сайт разработчика
@@ -42,17 +42,17 @@ block content
         polygon.triangles__left(points="0,0   0,86   500.8,86   500.8,75.5")
         polygon.triangles__right(points="1000,0   1000,86   500,86   500,75.5")
     .about__content.about__content-left
-      .content-left__title Обо мне
-        .content-left__about
-          .content-left__ava
-            img(src="../../ava.jpg", alt="ava").user__pic-img
-          .content-left__description
-            .content-left__subtitle Кто я
-            .content-left__text 
-              p Я веб разработчик из Санкт-Петербурга. Мне 29 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-              p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+      h2.content-left__title Обо мне
+      .content-left__about
+        .content-left__ava
+          img(src=require("../../img/ava.jpg"), alt="ava").about__pic-img
+        .content-left__description
+          h3.content-left__subtitle Кто я
+          .content-left__text 
+            p Я веб разработчик из Санкт-Петербурга. Мне 29 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+            p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
     .about__content.about__content-right
-      .content-right__title Чем я могу быть вам полезен
+      h3.content-right__title Чем я могу быть вам полезен
       .content-right__text 
         p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
       ul.skills-list
