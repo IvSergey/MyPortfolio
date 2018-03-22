@@ -8,7 +8,7 @@
     display: block;
     position: absolute;
     width: 100%;
-    bottom: -21px;
+    bottom: -4px;
     margin: 0 auto;
 
     .triangles__left {
@@ -20,7 +20,7 @@
     }
 }
 
-.about__content-left {
+.about__content-presentation {
     background: #edebe6;
     overflow: hidden;
 }
@@ -29,12 +29,12 @@
     width: 100%;
 }
 
-.about__content-right {
+.about__content-skills {
     flex-direction: column;
     background-color: #ebe8db;
 }
 
-.content-left__title {
+.content-presentation__title {
     width: 100%;
     font-size: 35px;
     color: #373e42;
@@ -56,7 +56,7 @@
         
 // }
 
-    .content-left__subtitle {
+    .content-presentation__subtitle {
     font-family: 'SansusWebissimo', Arial, Helvetica, sans-serif;
     color:  #5d5a55;
     font-size: 21px;
@@ -66,7 +66,7 @@
 }
 
 
-.content-left__text, .content-right__text {
+.content-presentation__text, .content-skills__text {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     color:  #5d5a55;
     font-size: 14px;
@@ -77,9 +77,9 @@
     padding-right: 3%
 } 
 
-.about__content-right {
+.about__content-skills {
     overflow: hidden;
-    .content-right__title {
+    .content-skills__title {
         font-family: 'SansusWebissimo', Arial, Helvetica, sans-serif;
         color:  #5d5a55;
         font-size: 21px;

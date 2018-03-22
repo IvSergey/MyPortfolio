@@ -6,17 +6,35 @@
 }
 
 .map__contacts {
-    width: 100%;
-    height: 290px;
+   
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 5px;
-    padding: 40px;
+    padding: 35px;
 
-    .contacts__title {
-        text-align: center;
-    }
+      
+}
 
-    .contacts__description{
-    	text-align: left;
-    }
+ .contacts__title {
+       
+    font-family: 'SansusWebissimo', Arial, Helvetica, sans-serif;
+    color:  #373e42;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 41px;
+    text-align: center;
+}
+
+.contacts__description{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color:  rgba(94, 90, 85, 0.8);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    
+}
+
+.contacts__pic-img, .contacts__text{
+    display: inline-block;
+    margin-right: 15px;
 }

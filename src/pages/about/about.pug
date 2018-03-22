@@ -41,19 +41,19 @@ block content
       svg.triangles__tr(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none")
         polygon.triangles__left(points="0,0   0,86   500.8,86   500.8,75.5")
         polygon.triangles__right(points="1000,0   1000,86   500,86   500,75.5")
-    .about__content.about__content-left
-      h2.content-left__title Обо мне
-      .content-left__about
-        .content-left__ava
+    .about__content.about__content-presentation
+      h2.content-presentation__title Обо мне
+      .content-presentation__about
+        .content-presentation__ava
           img(src=require("../../img/ava.jpg"), alt="ava").about__pic-img
-        .content-left__description
-          h3.content-left__subtitle Кто я
-          .content-left__text 
+        .content-presentation__description
+          h3.content-presentation__subtitle Кто я
+          .content-presentation__text 
             p Я веб разработчик из Санкт-Петербурга. Мне 29 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
             p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
-    .about__content.about__content-right
-      h3.content-right__title Чем я могу быть вам полезен
-      .content-right__text 
+    .about__content.about__content-skills
+      h3.content-skills__title Чем я могу быть вам полезен
+      .content-skills__text 
         p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
       ul.skills-list
         li.skills-list__item
@@ -93,50 +93,46 @@ block content
     .google-map
     .map__contacts
       .contacts__title Контакты
-        .contacts__description
-          //- svg.contacts__icon
-          //-   use(xlink:href="../../img/sprite/sprite.svg#")
+      .contacts__description
+          img(src=require("../../img/icons/skype.png"), alt="skype").contacts__pic-img
           p.contacts__text imas.spb
       .contacts__description
-          //- svg.contacts__icon
-          //-   use(xlink:href="../../img/sprite/sprite.svg#")
+          img(src=require("../../img/icons/mail.png"), alt="mail").contacts__pic-img
           p.contacts__text imas.spb@mail.ru
       .contacts__description
-          //- svg.contacts__icon
-          //-   use(xlink:href="../../img/sprite/sprite.svg#")
-          p.contacts__text +7 904 551 68 78
+          img(src=require("../../img/icons/phone.png"), alt="phone").contacts__pic-img
+          a.contacts__text (href="+78123771377" type="tel") +7 904 551 68 78
       .contacts__description
-          //- svg.contacts__icon
-          //-   use(xlink:href="../../img/sprite/sprite.svg#")
-          p.contacts__text г.Санкт-Петербург, ул. Главная, д. 35, кв. 52
-  footer.footer
-    .footer__desc
-      .footer__text
-        p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
-      .footer__author
-        p © Иванов Сергей  создано с любовью в LoftSchool | 2018
-    .footer__menu
-      ul.footer__menu-list
-        li.footer__menus__item
-          a.footer__menu(href="") Мои работы
-        li.footer__menu__item
-          a.footer__menu(href="") Обо мне
-        li.footer__menu__item
-          a.footer__menu(href="") Блог
-        li.footer__menu__item
-          a.footer__menu(href="") Авторизация
-      ul.socials
-        a.socials__link(href="#")
-          svg.socials__svg
-            use(xlink:href="../../img/sprite/sprite.svg#vk")
-        a.socials__link(href="#")
-          svg.socials__svg
-            use(xlink:href="../../img/sprite/sprite.svg#in")
-        a.socials__link(href="#")
-          svg.socials__svg
-            use(xlink:href="../../img/sprite/sprite.svg#git")
-    .footer__contacts
-      p.contacts__text imas.spb
-      p.contacts__text imas.spb@mail.ru
-      p.contacts__text +7 904 551 68 78
-      p.contacts__text г.Санкт-Петербург, ул. Главная, д. 35, кв. 52  
+          img(src=require("../../img/icons/map_marker.png"), alt="map_marker").contacts__pic-img
+          p.contacts__text г. Санкт-Петербург, ул. Главная, д. 35, кв. 52
+      footer.footer
+        .footer__desc
+          .footer__text
+            p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+          .footer__author
+            p © Иванов Сергей  создано с любовью в LoftSchool | 2018
+        .footer__menu
+          ul.footer__menu-list
+            li.footer__menu__item
+              a.footer__menu(href="") Мои работы
+            li.footer__menu__item
+              a.footer__menu(href="") Обо мне
+            li.footer__menu__item
+              a.footer__menu(href="") Блог
+            li.footer__menu__item
+              a.footer__menu(href="") Авторизация
+          ul.socials
+            a.socials__link(href="#")
+              svg.socials__svg
+                use(xlink:href="../../img/sprite/sprite.svg#vk")
+            a.socials__link(href="#")
+              svg.socials__svg
+                use(xlink:href="../../img/sprite/sprite.svg#in")
+            a.socials__link(href="#")
+              svg.socials__svg
+                use(xlink:href="../../img/sprite/sprite.svg#git")
+        .footer__contacts
+          p.contacts__text imas.spb
+          p.contacts__text imas.spb@mail.ru
+          p.contacts__text +7 904 551 68 78
+          p.contacts__text г.Санкт-Петербург, ул. Главная, д. 35, кв. 52  
