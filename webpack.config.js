@@ -133,7 +133,7 @@ module.exports = {
                     loader: 'svg-sprite-loader',
                     options: {
                       extract: true,
-                      spriteFilename: '../img/sprite/sprite.svg',
+                      spriteFilename: 'img/sprite/sprite.svg',
                     }
                   },
                   {

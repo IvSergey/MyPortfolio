@@ -6,16 +6,16 @@ import '../../img/sprite/icons/in.svg';
 import '../../img/sprite/icons/git.svg';
 
 
-// import '../../fonts/Roboto/Roboto-Bold.tff';
-// import '../../fonts/Roboto/Roboto-BoldItalic.tff';
-// import '../../fonts/Roboto/Roboto-Italic.tff';
-// import '../../fonts/Roboto/Roboto-Light.tff';
-// import '../../fonts/Roboto/Roboto-lightItalic.tff';
-// import '../../fonts/Roboto/Roboto-Medium.tff';
-// import '../../fonts/Roboto/Roboto-MediumItalic.tff';
-// import '../../fonts/Roboto/Regular.tff';
-// import '../../fonts/Sansus-Webissimo-Regelar/Sansus-Webissimo-Regular.tff';
-// import '../../fonts/FontAwesome/fontawesome-webfont.tff';
+import '../../fonts/Roboto/Roboto-Bold.ttf';
+import '../../fonts/Roboto/Roboto-BoldItalic.ttf';
+import '../../fonts/Roboto/Roboto-Italic.ttf';
+import '../../fonts/Roboto/Roboto-Light.ttf';
+import '../../fonts/Roboto/Roboto-lightItalic.ttf';
+import '../../fonts/Roboto/Roboto-Medium.ttf';
+import '../../fonts/Roboto/Roboto-MediumItalic.ttf';
+import '../../fonts/Roboto/Roboto-Regular.ttf';
+import '../../fonts/Sansus-Webissimo-Regular/Sansus-Webissimo-Regular.ttf';
+import '../../fonts/FontAwesome/fontawesome-webfont.ttf';
 
 
 
