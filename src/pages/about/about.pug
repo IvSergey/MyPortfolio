@@ -34,7 +34,11 @@ block content
           .user__name Сергей Иванов
           .user__info Личный сайт разработчика
     .hamburger.hero__menu
+      svg.hamburger__svg
+        use(xlink:href="../../img/sprite/sprite.svg#hamburger")  
     .arrow-down.hero__scroll-btn
+      svg.arrow__svg
+        use(xlink:href="../../img/sprite/sprite.svg#arrow")  
 
   section.section.about
     .about__triangles
@@ -121,7 +125,7 @@ block content
               a.footer__menu(href="") Блог
             li.footer__menu__item
               a.footer__menu(href="") Авторизация
-          ul.socials
+          ul.footer__socials
             a.socials__link(href="#")
               svg.socials__svg
                 use(xlink:href="../../img/sprite/sprite.svg#vk")

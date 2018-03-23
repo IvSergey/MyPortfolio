@@ -1,79 +1,11 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url('/fonts/Roboto/Roboto-Medium.generated.woff2') format('woff2'),
-         url('/fonts/Roboto/Roboto-Medium.generated.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic');
+
+
 
 @font-face {
-    font-family: 'Roboto-Light';
-    src: url('/fonts/Roboto/Roboto-Light.generated.woff2') format('woff2'),
-         url('/fonts/Roboto/Roboto-Light.generated.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto-Bold';
-    src: url('/fonts/Roboto/Roboto-Bold.generated.woff2') format('woff2'),
-         url('/fonts/Roboto/Roboto-Bold.generated.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto-BoldItalic';
-    src: url('/fonts/Roboto/Roboto-BoldItalic.generated.woff2') format('woff2'),
-         url('/fonts/Roboto/Roboto-BoldItalic.generated.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto-Italic';
-    src: url('/fonts/Roboto/Roboto-Italic.generated.woff2') format('woff2'),
-         url('/fonts/Roboto/Roboto-Italic.generated.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto-LightItalic';
-    src: url('/fonts/Roboto/Roboto-LightItalic.generated.woff2') format('woff2'),
-         url('/fonts/Roboto/Roboto-LightItalic.generated.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto-Medium';
-    src: url('/fonts/Roboto/Roboto-Medium.generated.woff2') format('woff2'),
-         url('/fonts/Roboto/Roboto-Medium.generated.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto-MediumItalic';
-    src: url('/fonts/Roboto/Roboto-MediumItalic.generated.woff2') format('woff2'),
-         url('/fonts/Roboto/Roboto-MediumItalic.generated.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto-Regular';
-    src: url('/fonts/Roboto/Roboto-Regular.generated.woff2') format('woff2'),
-         url('/fonts/Roboto/Roboto-Regular.generated.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Sansus-Webissimo-Regular';
-    src: url('/fonts/Sansus-Webissimo-Regular/Sansus-Webissimo-Regular.generated.woff2') format('woff2'),
-         url('/fonts/Sansus-Webissimo-Regular/Sansus-Webissimo-Regular.generated.woff') format('woff');
+    font-family: 'SansusWebissimo';
+    src: url('/fonts/Sansus-Webissimo-Regular/Sansus Webissimo-Regular.generated.woff2') format('woff2'),
+         url('/fonts/Sansus-Webissimo-Regular/Sansus Webissimo-Regular.generated.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

@@ -18,18 +18,24 @@
 .socials__svg {
     width: 30px;
     height: 20px;
-    fill: #cd8920;
+    fill: #fff;
 }
 
 .hero__menu {
     width: 40px;
     height: 35px;
-    background: url('../../img/about/hamburger.png') center center no-repeat;
+    // background: url('../../img/about/hamburger.png') center center no-repeat;
     border: none;
     cursor: pointer;
     position: absolute;
     top: 2%;
     right: 4%;
+}
+
+.hamburger__svg{
+        width: 30px;
+    height: 20px;
+    fill: #fff
 }
 
 .socials__link {
@@ -55,19 +61,33 @@
 }
 
 .user__name{
-	font-family: 'Roboto-Bold', Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	color:  #ffffff;
 	font-size: 20px;
-	// font-weight: 500;
 	line-height: 28px;
 	text-align: center;
+    font-weight: 500;
+    
 }
 
 .user__info{
-	font-family: 'Roboto-Light', Arial, Helvetica, sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
     color:  #ffffff;
 	font-size: 14px;
-	// font-weight: 400;
+	font-weight: 400;
 	line-height: 24px;
 	text-align: center;
+}
+
+
+ .hero__scroll-btn{
+    position: absolute;
+    bottom: 15%;
+    cursor: pointer;
+}
+
+.arrow__svg{
+    width: 30px;
+    height: 20px;
+    fill: #fff;
 }

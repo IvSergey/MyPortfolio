@@ -39,7 +39,7 @@
     font-size: 35px;
     color: #373e42;
     text-align: center;
-    font-family: 'SansusWebissimo', Arial, Helvetica, sans-serif;
+    font-family: SansusWebissimo, Arial, Helvetica, sans-serif;
     font-weight: normal;
     text-transform: uppercase;
     
@@ -57,7 +57,7 @@
 // }
 
     .content-presentation__subtitle {
-    font-family: 'SansusWebissimo', Arial, Helvetica, sans-serif;
+    font-family: SansusWebissimo, Arial, Helvetica, sans-serif;
     color:  #5d5a55;
     font-size: 21px;
     font-weight: 400;
@@ -109,6 +109,9 @@
     display: inline-block;
     width: 150px;
     height: 150px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
     .skill__title {
         position: absolute;
