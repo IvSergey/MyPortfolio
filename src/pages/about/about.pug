@@ -1,4 +1,4 @@
-extends ../base
+extends /../base
 
 block variables
   - var title = 'Обо мне'
@@ -94,37 +94,42 @@ block content
                       circle.circle__second.circle-25(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
                     .skill__title #{skill}
   section.section.map
-    .google-map
+    .google-map#map
     .map__contacts
       .contacts__title Контакты
       .contacts__description
-          img(src=require("../../img/icons/skype.png"), alt="skype").contacts__pic-img
-          p.contacts__text imas.spb
+          svg.contacts__pic-img
+            use(xlink:href="../../img/sprite/sprite.svg#skype")
+          a.contacts__text(href="imas.spb" type="skype") imas.spb
       .contacts__description
-          img(src=require("../../img/icons/mail.png"), alt="mail").contacts__pic-img
-          p.contacts__text imas.spb@mail.ru
+          svg.contacts__pic-img
+            use(xlink:href="../../img/sprite/sprite.svg#envelope2")
+          a.contacts__text(href="imas.spb@mail.ru" type="mailto") imas.spb@mail.ru
       .contacts__description
-          img(src=require("../../img/icons/phone.png"), alt="phone").contacts__pic-img
-          a.contacts__text +7 904 551 68 78
+          svg.contacts__pic-img
+            use(xlink:href="../../img/sprite/sprite.svg#phone")
+          a.contacts__text(href="+79045516878" type="tel") +7 904 551 68 78
       .contacts__description
-          img(src=require("../../img/icons/map_marker.png"), alt="map_marker").contacts__pic-img
-          p.contacts__text г. Санкт-Петербург, ул. Главная, д. 35, кв. 52
+          svg.contacts__pic-img
+            use(xlink:href="../../img/sprite/sprite.svg#map_marker")
+          a.contacts__text(href="#") г. Санкт-Петербург, ул. Главная, д. 35, кв. 52
       footer.footer
         .footer__desc
           .footer__text
             p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
           .footer__author
             p © Иванов Сергей  создано с любовью в LoftSchool | 2018
+          
         .footer__menu
           ul.footer__menu-list
+            li.footer__menu-item
+              a.footer__menu-link(href="") Мои работы
+            li.footer__menu-item
+              a.footer__menu-link(href="") Обо мне
             li.footer__menu__item
-              a.footer__menu(href="") Мои работы
-            li.footer__menu__item
-              a.footer__menu(href="") Обо мне
-            li.footer__menu__item
-              a.footer__menu(href="") Блог
-            li.footer__menu__item
-              a.footer__menu(href="") Авторизация
+              a.footer__menu-link(href="") Блог
+            li.footer__menu-item
+              a.footer__menu-link(href="") Авторизация
           ul.footer__socials
             a.socials__link(href="#")
               svg.socials__svg
@@ -135,8 +140,9 @@ block content
             a.socials__link(href="#")
               svg.socials__svg
                 use(xlink:href="../../img/sprite/sprite.svg#in")
+          
         .footer__contacts
-          p.contacts__text imas.spb
-          p.contacts__text imas.spb@mail.ru
-          p.contacts__text +7 904 551 68 78
-          p.contacts__text г.Санкт-Петербург, ул. Главная, д. 35, кв. 52  
+          a.footer__contacts-text(href="imas.spb" type="skype") imas.spb
+          a.footer__contacts-text(href="imas.spb@mail.ru" type="mailto") imas.spb@mail.ru
+          a.footer__contacts-text(href="+79045516878" type="tel") +7 904 551 68 78
+          p.footer__contacts-text Санкт-Петербург, ул. Главная, д. 35, кв. 52  

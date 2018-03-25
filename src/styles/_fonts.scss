@@ -11,9 +11,10 @@
 }
 
 @font-face {
-    font-family: 'FontAwesome';
-    src: url('/fonts/FontAwesome/FontAwesome.generated.woff2') format('woff2'),
-         url('/fonts/FontAwesome/FontAwesome.generated.woff') format('woff');
+    font-family: 'fontawesome';
+    src: url('/fonts/FontAwesome/fontawesome-webfont.generated.woff2') format('woff2'),
+         url('/fonts/FontAwesome/fontawesome-webfont.generated.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: block;
 }
