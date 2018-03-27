@@ -5,40 +5,8 @@ block variables
 
 
 block content
-  //- ul.test-list
-  //-   each item in another.skills
-  //-     li
-  //-       h1 #{item}
-
-  //- h2 #{skills.about}
-
-  section.section.hero
-    .hero__socials
-      ul.socials
-        a.socials__link(href="#")
-          svg.socials__svg
-            use(xlink:href="../../img/sprite/sprite.svg#vk")
-        a.socials__link(href="#")
-          svg.socials__svg
-            use(xlink:href="../../img/sprite/sprite.svg#git")
-        a.socials__link(href="#")
-          svg.socials__svg
-            use(xlink:href="../../img/sprite/sprite.svg#in")
-    .hero__title
-      .section-title
-        img(src="", alt="").section-title__pic
-      .user.hero__user
-        .user__pic
-          img(src=require("../../img/ava.jpg"), alt="ava").user__pic-img
-        .user__description
-          .user__name Сергей Иванов
-          .user__info Личный сайт разработчика
-    .hamburger.hero__menu
-      svg.hamburger__svg
-        use(xlink:href="../../img/sprite/sprite.svg#hamburger")  
-    .arrow-down.hero__scroll-btn
-      svg.arrow__svg
-        use(xlink:href="../../img/sprite/sprite.svg#arrow")  
+   
+  include ../common/hero
 
   section.section.about
     .about__triangles
@@ -46,17 +14,32 @@ block content
         polygon.triangles__left(points="0,0   0,86   500.8,86   500.8,75.5")
         polygon.triangles__right(points="1000,0   1000,86   500,86   500,75.5")
     .about__content.about__content-presentation
-      h2.content-presentation__title Обо мне
+      .about__title  
+        svg.dot__svg-left
+          use(xlink:href="../../img/sprite/sprite.svg#dot left")
+          h2.content-presentation__title Обо мне
+        svg.dot__svg-right
+          use(xlink:href="../../img/sprite/sprite.svg#dot right")
       .content-presentation__about
         .content-presentation__ava
           img(src=require("../../img/ava.jpg"), alt="ava").about__pic-img
         .content-presentation__description
-          h3.content-presentation__subtitle Кто я
+          .about__title
+            svg.ldot__svg-left
+              use(xlink:href="../../img/sprite/sprite.svg#ldot left")
+              h3.content-presentation__subtitle Кто я
+            svg.ldot__svg-right
+              use(xlink:href="../../img/sprite/sprite.svg#ldot right")
           .content-presentation__text 
             p Я веб разработчик из Санкт-Петербурга. Мне 29 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
             p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
     .about__content.about__content-skills
-      h3.content-skills__title Чем я могу быть вам полезен
+      .about__title
+        svg.ldot__svg-left
+          use(xlink:href="../../img/sprite/sprite.svg#ldot left")
+          h3.content-skills__title Чем я могу быть вам полезен
+        svg.ldot__svg-right
+          use(xlink:href="../../img/sprite/sprite.svg#ldot right")
       .content-skills__text 
         p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
       ul.skills-list
@@ -94,7 +77,7 @@ block content
                       circle.circle__second.circle-25(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
                     .skill__title #{skill}
   section.section.map
-    .google-map#map
+    
     .map__contacts
       .contacts__title Контакты
       .contacts__description
@@ -113,36 +96,6 @@ block content
           svg.contacts__pic-img
             use(xlink:href="../../img/sprite/sprite.svg#map_marker")
           a.contacts__text(href="#") г. Санкт-Петербург, ул. Главная, д. 35, кв. 52
-      footer.footer
-        .footer__desc
-          .footer__text
-            p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
-          .footer__author
-            p © Иванов Сергей  создано с любовью в LoftSchool | 2018
-          
-        .footer__menu
-          ul.footer__menu-list
-            li.footer__menu-item
-              a.footer__menu-link(href="") Мои работы
-            li.footer__menu-item
-              a.footer__menu-link(href="") Обо мне
-            li.footer__menu__item
-              a.footer__menu-link(href="") Блог
-            li.footer__menu-item
-              a.footer__menu-link(href="") Авторизация
-          ul.footer__socials
-            a.socials__link(href="#")
-              svg.socials__svg
-                use(xlink:href="../../img/sprite/sprite.svg#vk")
-            a.socials__link(href="#")
-              svg.socials__svg
-                use(xlink:href="../../img/sprite/sprite.svg#git")
-            a.socials__link(href="#")
-              svg.socials__svg
-                use(xlink:href="../../img/sprite/sprite.svg#in")
-          
-        .footer__contacts
-          a.footer__contacts-text(href="imas.spb" type="skype") imas.spb
-          a.footer__contacts-text(href="imas.spb@mail.ru" type="mailto") imas.spb@mail.ru
-          a.footer__contacts-text(href="+79045516878" type="tel") +7 904 551 68 78
-          p.footer__contacts-text Санкт-Петербург, ул. Главная, д. 35, кв. 52  
+    .google-map#map
+
+    include ../common/footer

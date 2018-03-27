@@ -27,6 +27,12 @@
 
 .about__pic-img{
     width: 100%;
+
+     @include tablets() {
+       
+        padding-left: 25%;
+        padding-right: 25%;
+    }
 }
 
 .about__content-skills {
@@ -35,14 +41,15 @@
 }
 
 .content-presentation__title {
-    width: 100%;
+    width: auto;
     font-size: 35px;
     color: #373e42;
     text-align: center;
-    font-family: SansusWebissimo, Arial, Helvetica, sans-serif;
+    font-family: 'SansusWebissimo', Arial, Helvetica, sans-serif;
     font-weight: normal;
     text-transform: uppercase;
-    
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 // .content-left__about {
@@ -57,12 +64,14 @@
 // }
 
     .content-presentation__subtitle {
-    font-family: SansusWebissimo, Arial, Helvetica, sans-serif;
+    font-family: 'SansusWebissimo', Arial, Helvetica, sans-serif;
     color:  #5d5a55;
     font-size: 21px;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
+     padding-left: 10px;
+    padding-right: 10px;
 }
 
 
@@ -80,19 +89,31 @@
 .about__content-skills {
     overflow: hidden;
     .content-skills__title {
+        width: 43%;
         font-family: 'SansusWebissimo', Arial, Helvetica, sans-serif;
         color:  #5d5a55;
         font-size: 21px;
         font-weight: 400;
         text-align: center;
         text-transform: uppercase;
+        padding-left: 3%;
+        padding-right: 3%
+
     }
 }
 
 .skills-list{
+
     list-style: none;
     margin: 0;
     padding-left: 0;
+}
+
+.skills-row__list{
+        list-style: none;
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
  .skills-row__title{
@@ -102,11 +123,12 @@
     font-weight: 500;
     line-height: 28px;
     text-align: center;
+
  }
 
 .skills-row__item{
     position: relative;
-    display: inline-block;
+    // display: inline-block;
     width: 150px;
     height: 150px;
     margin-right: 30px;
@@ -123,6 +145,7 @@
         font-family: Arial, Helvetica, sans-serif;
         color: #e7a731;
         font-weight: bold;
+
     }
 
     .row-chart__circles {
@@ -201,4 +224,39 @@
      .row-chart__circles .circle-100 {
         stroke-dasharray: 282.6 282.6;
      }
+}
+
+.dot__svg-left, .dot__svg-right{
+    width: 45px;
+    height: 20px;
+    
+}
+
+// .dot__svg-left{
+//     position: absolute;
+//     left: 27%;
+// }
+
+// .dot__svg-right{
+//     position: absolute;
+//     right: 27%;
+// }
+
+
+.about__title, .about__subtitle{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.ldot__svg-left, .ldot__svg-right{
+    width: 30px;
+    height: 20px;
+    
+}
+
+p {
+    margin-top: 0;
+    margin-bottom:0;
+
 }
