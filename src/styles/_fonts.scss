@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic');
+
+
+
+@font-face {
+    font-family: 'SansusWebissimo';
+    src: url('/fonts/Sansus-Webissimo-Regular.generated.woff2') format('woff2'),
+         url('/fonts/Sansus-Webissimo-Regular.generated.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'bernier';
+  src: url('/fonts/bernierregular-regular.generated.woff2') format('woff2'),
+  url('/fonts/bernierregular-regular.generated.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@mixin bernier() {
+  font-family: 'bernier', Times, serif;
+  font-weight: 400;
+}

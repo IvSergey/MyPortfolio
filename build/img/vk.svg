@@ -1,0 +1,8 @@
+export default {
+      id: "vk-usage",
+      viewBox: "0 0 30.011 17.123",
+      url: __webpack_public_path__ + "D:\\Курсы\\Задания по курсу\\MyPortfolio\\src\\img\\sprite\\icons\\vk.svg",
+      toString: function () {
+        return this.url;
+      }
+    }

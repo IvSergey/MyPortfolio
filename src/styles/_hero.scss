@@ -1,0 +1,93 @@
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: url('../../img/about/background/sand.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero__socials{
+	position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.socials__svg {
+    width: 30px;
+    height: 20px;
+    fill: #fff;
+}
+
+.hero__menu {
+    width: 40px;
+    height: 35px;
+    // background: url('../../img/about/hamburger.png') center center no-repeat;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 2%;
+    right: 4%;
+}
+
+.hamburger__svg{
+        width: 30px;
+    height: 20px;
+    fill: #fff
+}
+
+.socials__link {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.user__pic-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.hero__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.user__name{
+	font-family: 'bernier', Arial, Helvetica, sans-serif;
+	color:  #ffffff;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+    font-weight: 500;
+    
+}
+
+.user__info{
+	font-family: 'bernier', Arial, Helvetica, sans-serif;
+    color:  #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+}
+
+
+ .hero__scroll-btn{
+    position: absolute;
+    bottom: 15%;
+    cursor: pointer;
+}
+
+.arrow__svg{
+    width: 30px;
+    height: 20px;
+    fill: #fff;
+}

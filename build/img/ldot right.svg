@@ -1,0 +1,8 @@
+export default {
+      id: "ldot right-usage",
+      viewBox: "0 0 21 11",
+      url: __webpack_public_path__ + "D:\\Курсы\\Задания по курсу\\MyPortfolio\\src\\img\\sprite\\icons\\ldot right.svg",
+      toString: function () {
+        return this.url;
+      }
+    }

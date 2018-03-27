@@ -1,3 +1,4 @@
+// process.traceDeprecation = true;
 // базовый модуль node.js  универсальный путь для разных платформ
 const path = require ('path');
 
@@ -9,6 +10,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJsWebpackPlugin = require('uglifyjs-webpack-plugin'); 
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 const PATHS = {
@@ -56,7 +58,7 @@ module.exports = {
             template: PATHS.src + '/pages/blog/blog.pug'
         }),
         // Для очистки папки build
-        new CleanWebpackPlugin('build'),
+        // new CleanWebpackPlugin('build'),
         // Подключение отельных css файлов (когда не работает срабатывает fallback)
         new ExtractTextPlugin({
             filename: './css/[name].css'
@@ -76,6 +78,7 @@ module.exports = {
           $: 'jquery',
           jQuery: 'jquery'
         }),
+        new SpriteLoaderPlugin(),
         new UglifyJsWebpackPlugin()  // минификация js 
     ],
     module: {
@@ -116,11 +119,55 @@ module.exports = {
           	{
           		// Добавление префикса
                 test: /\.js$/,
-                enforce: "pre",
-                loader: "eslint-loader",
+                enforce: 'pre',
+                loader: 'eslint-loader',
                 options: {
                     fix: true
                 }            
+            },
+
+            {
+                test: /\.svg$/,
+                use: [
+                  {
+                    loader: 'svg-sprite-loader',
+                    options: {
+                      extract: true,
+                      spriteFilename: 'img/sprite/sprite.svg',
+                    }
+                  },
+                  {
+                    loader: 'svgo-loader',
+                    options: {
+                      plugins: [
+                        { removeNonInheritableGroupAttrs: true },
+                        { collapseGroups: true },
+                        { removeAttrs: { attrs: '(fill|stroke)' } }
+                      ],
+                    },
+                  },
+                ],
+            },
+
+            {
+                test: /^(?!.*\.generated\.ttf$).*\.ttf$/,
+                use: ExtractTextPlugin.extract({
+                  publicPath: '../',
+                  use: ['css-loader', 'fontface-loader']
+                })
+            },
+
+            {
+                test: /\.generated.(ttf|eot|woff|woff2)$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                      outputPath: 'fonts/',
+                      name: '[name].[ext]'
+                    }
+                  }
+                ]
             }
         ]
     }

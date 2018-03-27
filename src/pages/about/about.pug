@@ -1,0 +1,101 @@
+extends /../base
+
+block variables
+  - var title = 'Обо мне'
+
+
+block content
+   
+  include ../common/hero
+
+  section.section.about
+    .about__triangles
+      svg.triangles__tr(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none")
+        polygon.triangles__left(points="0,0   0,86   500.8,86   500.8,75.5")
+        polygon.triangles__right(points="1000,0   1000,86   500,86   500,75.5")
+    .about__content.about__content-presentation
+      .about__title  
+        svg.dot__svg-left
+          use(xlink:href="../../img/sprite/sprite.svg#dot left")
+          h2.content-presentation__title Обо мне
+        svg.dot__svg-right
+          use(xlink:href="../../img/sprite/sprite.svg#dot right")
+      .content-presentation__about
+        .content-presentation__ava
+          img(src=require("../../img/ava.jpg"), alt="ava").about__pic-img
+        .content-presentation__description
+          .about__title
+            svg.ldot__svg-left
+              use(xlink:href="../../img/sprite/sprite.svg#ldot left")
+              h3.content-presentation__subtitle Кто я
+            svg.ldot__svg-right
+              use(xlink:href="../../img/sprite/sprite.svg#ldot right")
+          .content-presentation__text 
+            p Я веб разработчик из Санкт-Петербурга. Мне 29 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+            p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+    .about__content.about__content-skills
+      .about__title
+        svg.ldot__svg-left
+          use(xlink:href="../../img/sprite/sprite.svg#ldot left")
+          h3.content-skills__title Чем я могу быть вам полезен
+        svg.ldot__svg-right
+          use(xlink:href="../../img/sprite/sprite.svg#ldot right")
+      .content-skills__text 
+        p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+      ul.skills-list
+        li.skills-list__item
+          .skills-row
+            .skills-row__title Frontend
+            ul.skills-row__list
+              each skill in ['Html5', 'css3', 'JavaScript']
+                li.skills-row__item
+                  .skill
+                    svg.row-chart__circles(viewBox="0 0 110 110")
+                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                      circle.circle__second.circle-85(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                  .skill__title #{skill}
+        li.skills-list__item
+          .skills-row
+            .skills-row__title Backend
+            ul.skills-row__list
+              each skill in ['PHP', 'mySQL', 'Node.js & npm', 'Mongo.db']
+                li.skills-row__item
+                  .skill
+                    svg.row-chart__circles(viewBox="0 0 110 110")
+                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                      circle.circle__second.circle-25(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                    .skill__title #{skill}
+        li.skills-list__item
+          .skills-row
+            .skills-row__title Workflow
+            ul.skills-row__list
+              each skill in ['Git', 'Gulp', 'Bower']
+                li.skills-row__item
+                  .skill
+                    svg.row-chart__circles(viewBox="0 0 110 110")
+                      circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                      circle.circle__second.circle-25(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                    .skill__title #{skill}
+  section.section.map
+    
+    .map__contacts
+      .contacts__title Контакты
+      .contacts__description
+          svg.contacts__pic-img
+            use(xlink:href="../../img/sprite/sprite.svg#skype")
+          a.contacts__text(href="imas.spb" type="skype") imas.spb
+      .contacts__description
+          svg.contacts__pic-img
+            use(xlink:href="../../img/sprite/sprite.svg#envelope2")
+          a.contacts__text(href="imas.spb@mail.ru" type="mailto") imas.spb@mail.ru
+      .contacts__description
+          svg.contacts__pic-img
+            use(xlink:href="../../img/sprite/sprite.svg#phone")
+          a.contacts__text(href="+79045516878" type="tel") +7 904 551 68 78
+      .contacts__description
+          svg.contacts__pic-img
+            use(xlink:href="../../img/sprite/sprite.svg#map_marker")
+          a.contacts__text(href="#") г. Санкт-Петербург, ул. Главная, д. 35, кв. 52
+    .google-map#map
+
+    include ../common/footer
