@@ -1,5 +1,20 @@
-.footer {
-    position: absolute;
+.footer{
+    position: relative;
+   min-height: 150px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+
+    
+
+    @include laptops() {
+    display: flex;
+    justify-content: space-between;
+      
+  }
+}
+
+.footer-about {
+   position: absolute;
     min-height: 150px;
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
@@ -30,6 +45,22 @@
     padding-right: 5%;
     padding-left: 5%;
 
+  //   @include tablets() {
+  //       padding-right: 0;
+  //       padding-left: 0;
+  //       display: flex;
+  //       flex-direction: column;
+  //       align-items: flex-start;
+  // }
+
+    @include laptops() {
+        padding-right: 0;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+  }
+
     &:after{
       display: block;
         content: "";
@@ -40,6 +71,19 @@
         left: 0;
         top: 65%;
         margin-left: 5%;
+
+         @include tablets() {
+            display: none;
+        }
+
+         @include laptops() {
+            display: block;
+            height: 87px;
+            width: 1px;
+            bottom: 0;
+            left: 64%;
+            top: 15px;
+         }    
     }
    
 }
@@ -56,6 +100,10 @@
     justify-content: center;
     list-style: none;
     padding-left: 0;
+
+    @include tablets() {
+    justify-content: flex-start;
+    }        
     
  }   
 
@@ -76,6 +124,11 @@
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+        padding-top: 20px;
+
+     @include laptops() {
+        text-align: left;
+  }
 }
 
 .footer__author{
@@ -85,17 +138,34 @@
     font-weight: 300;
     line-height: 24px;
     text-align: center;
+    
+    @include tablets() {
+        // display: inline-flex;
+        // padding-left: 25%;
+  }
+
+     @include laptops() {
+        text-align: left;
+  }
+
 }
 
 .footer__contacts{
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    padding-top: 1%;
     color:  #ffffff;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
     text-align: center;
+
+    @include laptops() {
+        text-align: left;
+        padding-right: 3%;
+        
+    }    
 }
 
 .footer__contacts-text{
@@ -110,6 +180,12 @@
     display: flex;
     justify-content: center;
     padding-left: 0;
+
+     @include tablets() {
+        justify-content: flex-start;
+        
+    }    
+   
 }
 
 // .line { 
@@ -124,6 +200,18 @@
     padding-left: 20%;
     padding-right: 20%;
 
+     @include tablets() {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+  }
+
+     @include laptops() {
+        width: 320px;
+        padding-right: 0;
+        padding-left: 3%;
+    }    
+
     &:after{
       display: block;
     content: "";
@@ -132,8 +220,28 @@
     background-color: hsla(0,0%,100%,.2);
     position: absolute;
     left: 0;
-    top: 40%;
+    top: 44%;
     margin-left: 5%;
+
+        @include tablets() {
+            top: 47%;
+         }    
+
+ 
+
+        @include laptops() {
+            height: 87px;
+            width: 1px;
+            bottom: 0;
+            left: 28%;
+            top: 15px;
+         }    
     }
 }
 
+.footer__about {
+     @include tablets() {
+            display: flex;
+            justify-content: space-between;
+         }    
+}
