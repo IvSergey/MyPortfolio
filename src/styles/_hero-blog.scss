@@ -52,18 +52,31 @@
     border-radius: 50%;
 }
 
+.blog__title{
+     display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.dot__svg-left, .dot__svg-right{
+    width: 45px;
+    height: 20px;
+    fill: #fff;
+    
+}
+
 .hero__user {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: -152px;
+     margin-top: -152px;
 
-    &:before{
+     &:before{
         display: none;
         content: "";
-        background: url('../../img/portfolio_header.png') center center no-repeat;
+        background: url('../../img/blog_header.png') center center no-repeat;
         background-size: contain;
         width: 100%;
         position: absolute;
@@ -72,11 +85,9 @@
 
         @include tablets() {
             display: block;
-    }
+        }
         
     }
-      
-    
 }
 
 .user__name{
@@ -87,7 +98,10 @@
 	text-align: center;
     font-weight: 500;
     margin-top: 10px;
-    margin-bottom: 10px;    
+    margin-bottom: 10px; 
+    padding-right: 10px;
+    padding-left: 10px;
+    text-transform: uppercase;   
    
 
     @include tablets() {

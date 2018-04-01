@@ -9,6 +9,10 @@
     position: relative;
     overflow: hidden;
     height: 100vh;
+    @include tablets() {
+       
+        position: relative;
+    }
 }
 
 .map__contacts {
@@ -16,11 +20,28 @@
     background-color: rgba(252, 252, 252, 0.85);
     border-radius: 5px;
     padding: 35px;
+     
+      @include tablets() {
+       transform: translate(36%,27%);
+        position: absolute;
+        z-index: 1;
+    }
 
+      @include laptops() {
+       transform: translate(90%,27%);
+        
+    }
       
 }
 
- .contacts__title {
+.contacts__title{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+
+ .contacts__title-name {
        
     font-family: 'SansusWebissimo', Arial, Helvetica, sans-serif;
     color:  #373e42;
@@ -28,8 +49,12 @@
     font-weight: 400;
     line-height: 41px;
     text-align: center;
-    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
+
 
 .contacts__description{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;

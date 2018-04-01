@@ -9,7 +9,7 @@
 
     @include laptops() {
     display: flex;
-    justify-content: space-between;
+    
       
   }
 }
@@ -22,8 +22,14 @@
     bottom: 0;
     left: 0;
     right: 0;
-     
 
+    @include laptops() {
+    display: flex;
+    
+      
+  }
+     
+       
 
     // .footer__desc {
     //     width: 50%;
@@ -56,10 +62,11 @@
 
     @include laptops() {
         padding-right: 0;
-        padding-left: 0;
+        padding-left: 75px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        padding-top: 17px;
   }
 
     &:after{
@@ -125,7 +132,9 @@
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-        padding-top: 20px;
+    padding-top: 20px;
+
+
 
      @include laptops() {
         text-align: left;
@@ -162,9 +171,19 @@
     line-height: 24px;
     text-align: center;
 
+      @include tablets() {
+        top: 78px;
+        right: 5%;
+        position: absolute;
+        text-align: right;
+        
+      }
+        
+       
+
     @include laptops() {
         text-align: left;
-        padding-right: 3%;
+        top: 17px;
         
     }    
 }
@@ -225,7 +244,7 @@
     margin-left: 5%;
 
         @include tablets() {
-            top: 47%;
+            top: 48%;
          }    
 
  

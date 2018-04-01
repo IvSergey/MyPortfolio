@@ -8,7 +8,7 @@ block content
   .header__hidden
 
   include ../common/hero
-
+  
   
   section.section.works
     .about__triangles
@@ -39,21 +39,24 @@ block content
             img(src=require("../../img/works/quotes.png"), alt='кавычки').quotes__img-pic
             .reviews__text
                p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 3 месяца только самых тяжелых испытаний и бессонных ночей!
-            .reviews__author
+            .reviews__block
               .reviews__img
                 img(src=require("../../img/works/koval.png"), alt='Дмитрий Ковальчук').reviews__img-pic
-              .reviews__author-name Ковальчук Дмитрий
-              .reviews__author-prof основатель LoftSchool
+              .reviews__author
+                .reviews__author-name Ковальчук Дмитрий
+                .reviews__author-prof основатель LoftSchool
         li.reviews__item
-           .reviews__desc
+         .reviews__desc
             img(src=require("../../img/works/quotes.png"), alt='кавычки').quotes__img-pic
             .reviews__text
-              p Этот код выдержит любые испытания. Только сайт не загружается на слишком старых браузерах!
-            .reviews__author
+              p Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!
+            .reviews__block
               .reviews__img
-                img(src=require("../../img/works/sabancev.png"), alt='Владимир Сабанцев').reviews__img-pic
-              .reviews__author-name Сабанцев Владимир
-              .reviews__author-prof преподаватель
+                img(src=require("../../img/works/sabancev.png"), alt='Владимир Сабанцев')  
+              .reviews__author
+                .reviews__img-pic
+                .reviews__author-name Сабанцев Владимир
+                .reviews__author-prof преподаватель
   section.section__form
     .form__title
       svg.ldot__svg-left

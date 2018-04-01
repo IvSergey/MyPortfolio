@@ -29,9 +29,11 @@
 // }
 
 
+
+
 .works__title-name{
 	width: auto;
-    font-size: 62px;
+    font-size: 35px;
     color: #373e42;
     text-align: center;
     font-family: 'SansusWebissimo', Arial, Helvetica, sans-serif;
@@ -45,6 +47,19 @@
     display: flex;
     align-items: center;
     justify-content:center;
+    background-color: rgb(250, 248, 240);
+
+    &:before{
+        display: block;
+        content: "";
+        background: url('../../img/works_header.png') center center no-repeat;
+        background-size: contain;
+        width: 100%;
+        position: absolute;
+        height: 100px;
+        top: 99%;
+        
+    }
 }
 
 .dot__svg-left, .dot__svg-right{
@@ -67,21 +82,48 @@
 }
 
 .reviws__title-name{
-	width: 65%;
+	width: 50%;
     font-size: 35px;
     color: #5d5a54;
     text-align: center;
     font-family: 'SansusWebissimo', Arial, Helvetica, sans-serif;
     font-weight: normal;
     text-transform: uppercase;
+    @include tablets() {
+       width: 30%;
+       
+    }
 }
 
 .reviews__list {
 	 
 	 list-style: none;
      padding-left: 0;
+
+      @include tablets() {
+       display: flex;
+       
+    }
+
+     @include laptops() {
+       width: 80%;
+       padding-left: 17%;
+       
+    }
   
 }
+
+.reviews__item{
+
+       @include tablets() {
+       width: 50%;
+       margin-right: 40px;
+       
+    }
+
+}
+
+
 
 // .reviews-block__item {
 //   width: 100%;
@@ -95,8 +137,12 @@
 }
 
 
-.section__form{
- 
+.reviews__desc{
+       @include tablets() {
+      text-align: left;
+       
+    }
+
   
 }
 
@@ -117,6 +163,16 @@
 	font-weight: 400;
 	line-height: 24px;
 	text-align: left;
+
+        @include laptops() {
+          width: 80%;
+       
+    }
+}
+
+.reviews__block{
+  display: flex;
+  margin-top: 20px;
 }
 
 .reviews__author{
@@ -126,6 +182,9 @@
 	font-size: 14px;
 	line-height: 24px;
 	text-align: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  
 }
 
 .reviews__author-name{
@@ -161,7 +220,7 @@
     font-weight: 400;
     text-transform: uppercase;
     padding-left: 10px;
-    padding-right: 10px
+    padding-right: 10px;
 }
 
 .form__content-input, .form__content-textarea {
@@ -205,4 +264,5 @@
 .works__arrow {
   cursor: pointer;
   fill:#fff;
+  padding-bottom: 20px;
 }

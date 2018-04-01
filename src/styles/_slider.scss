@@ -1,12 +1,15 @@
 .slider {
   width: 100%;
   
-  // display: grid;
-  // grid-template-columns: 50% 50%;
-  // grid-template-rows: 75% 25%;
-  // grid-template-areas:
-  //   "info slider"
-  //   "info btns";
+   @include laptops() {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 75% 25%;
+        grid-template-areas:
+          "info slider"
+          "info btns";
+       
+    }
 }
 
 
@@ -17,7 +20,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50%;
+  height: 500px;
+  grid-area: slider;
 }
 
 .slider____img {
@@ -37,17 +41,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  grid-area: info;
   
 }
 
 .slider__title-name{
     width: 65%;
-    font-size: 35px;
+    font-size: 30px;
     color: #5d5a54;
     text-align: center;
     font-family: 'SansusWebissimo', Arial, Helvetica, sans-serif;
     font-weight: normal;
     text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @include tablets() {
+       width: 90%;
+       
+    }
     
 }
 
@@ -63,7 +75,7 @@
 
 .slider__skills {
   font-family: 'Roboto';
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 500;
   text-transform: uppercase;
   color: #cd8920;
@@ -78,6 +90,12 @@
         position: absolute;
         right: 0;  
         margin-top: -10px;
+
+         @include laptops() {
+          width: 42%;
+           left: 4%;
+       
+        }
     }
   &:after{
       display: block;
@@ -88,6 +106,12 @@
         position: absolute;
         right: 0;  
         margin-top: 10px;
+
+          @include laptops() {
+          width: 42%;
+          left: 4%;
+       
+        }
     }
 }
 
@@ -124,6 +148,7 @@
   display: flex;
   font-size: 0;
   height: 25%;
+  grid-area: btns;
 }
 
 .slider__btns-left, .slider__btns-right {
@@ -140,12 +165,22 @@
 
 .slider__btns-left {
   background-image: url(../../img/works/slide1.png);
-  height: 176px
+  height: 176px;
+
+  @include tablets() {
+       height: 283px;
+       
+    }
 }
 
 .slider__btns-right {
   background-image: url(../../img/works/slide2.png);
-  height: 176px
+  height: 176px;
+
+  @include tablets() {
+        height: 283px;
+        
+    }
 }
 
 .slider-btn__icon {

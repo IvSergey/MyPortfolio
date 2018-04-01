@@ -7,12 +7,13 @@ block variables
 block content
    
   include ../common/hero
+  
 
   section.section.about
     .about__triangles
       svg.triangles__tr(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none")
-        polygon.triangles__left(points="0,0   0,86   500.8,86   500.8,75.5")
-        polygon.triangles__right(points="1000,0   1000,86   500,86   500,75.5")
+        polygon.triangles__left-about(points="0,0   0,86   500.8,86   500.8,75.5")
+        polygon.triangles__right-about(points="1000,0   1000,86   500,86   500,75.5")
     .about__content.about__content-presentation
       .about__title  
         svg.dot__svg-left
@@ -79,7 +80,12 @@ block content
   section.section.map
     
     .map__contacts
-      .contacts__title Контакты
+      .contacts__title
+        svg.dot__svg-left
+          use(xlink:href="../../img/sprite/sprite.svg#dot left")
+          h2.contacts__title-name Контакты
+        svg.dot__svg-right  
+          use(xlink:href="../../img/sprite/sprite.svg#dot right") 
       .contacts__description
           svg.contacts__pic-img
             use(xlink:href="../../img/sprite/sprite.svg#skype")

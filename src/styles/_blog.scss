@@ -1,11 +1,12 @@
 .section__blog {
   //max-height: 1190px;
   display: flex;
-  background-color: rgb(226, 226, 226);
+  
 }
 
 .blog__container{
 	display: flex;
+  background-color: rgb(250, 248, 240);
 
 }
 
@@ -58,6 +59,7 @@
 
 .content__item {
   border-bottom: 3px solid #ecebe4;
+  
 
   &:last-child {
     border-bottom: none;
