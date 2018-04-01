@@ -1,0 +1,143 @@
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: url('../../img/about/background/sand.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero__socials{
+	position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.socials__svg {
+    width: 30px;
+    height: 20px;
+    fill: #fff;
+}
+
+.hero__menu {
+    width: rem(40px);
+    height: rem(35px);
+    // background: url('../../img/about/hamburger.png') center center no-repeat;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 2%;
+    right: 4%;
+}
+
+.hamburger__svg{
+        width: 30px;
+    height: 20px;
+    fill: #fff
+}
+
+.socials__link {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.user__pic-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.blog__title{
+     display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.dot__svg-left, .dot__svg-right{
+    width: 45px;
+    height: 20px;
+    fill: #fff;
+    
+}
+
+.hero__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+     margin-top: -152px;
+
+     &:before{
+        display: none;
+        content: "";
+        background: url('../../img/blog_header.png') center center no-repeat;
+        background-size: contain;
+        width: 100%;
+        position: absolute;
+        height: 200px;
+        top: 19%;
+
+        @include tablets() {
+            display: block;
+        }
+        
+    }
+}
+
+.user__name{
+	font-family: 'SansusWebissimo', Arial, Helvetica, sans-serif;
+	color:  #ffffff;
+	font-size: 30px;
+	line-height: 28px;
+	text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    padding-right: 10px;
+    padding-left: 10px;
+    text-transform: uppercase;   
+   
+
+    @include tablets() {
+      margin-bottom: 10px;  
+      font-size: 35px;
+    }
+
+    @include laptops() {
+      margin-bottom: 20px;  
+      font-size: 62px;
+    }
+    
+}
+
+.user__info{
+	font-family: 'SansusWebissimo', Arial, Helvetica, sans-serif;
+    color:  #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+
+    @include tablets() {
+      font-size: 16px;
+    }
+}
+
+
+ .hero__scroll-btn{
+    position: absolute;
+    bottom: 15%;
+    cursor: pointer;
+}
+
+.arrow__svg{
+    width: 30px;
+    height: 20px;
+    fill: #fff;
+}

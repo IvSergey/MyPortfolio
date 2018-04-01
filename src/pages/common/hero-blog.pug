@@ -1,0 +1,32 @@
+section.section.hero
+  .hero__socials
+    ul.socials
+      a.socials__link(href="#")
+        svg.socials__svg
+          use(xlink:href="../../img/sprite/sprite.svg#vk")
+      a.socials__link(href="#")
+        svg.socials__svg
+          use(xlink:href="../../img/sprite/sprite.svg#git")
+      a.socials__link(href="#")
+        svg.socials__svg
+          use(xlink:href="../../img/sprite/sprite.svg#in")
+  .hero__title
+    .section-title
+      img(src="", alt="").section-title__pic
+    .user.hero__user
+      .user__pic
+        img(src=require("../../img/ava.jpg"), alt="Иванов Сергей").user__pic-img
+      h1.user__description
+        .blog__title
+          svg.dot__svg-left
+            use(xlink:href="../../img/sprite/sprite.svg#dot left")
+            .user__name Блог 
+          svg.dot__svg-right
+            use(xlink:href="../../img/sprite/sprite.svg#dot right")  
+        .user__info статьи, которые я написал
+  .hamburger.hero__menu
+    svg.hamburger__svg
+      use(xlink:href="../../img/sprite/sprite.svg#hamburger")  
+  .arrow-down.hero__scroll-btn
+    svg.arrow__svg
+      use(xlink:href="../../img/sprite/sprite.svg#arrow")  

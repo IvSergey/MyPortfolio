@@ -22,8 +22,8 @@
 }
 
 .hero__menu {
-    width: 40px;
-    height: 35px;
+    width: rem(40px);
+    height: rem(35px);
     // background: url('../../img/about/hamburger.png') center center no-repeat;
     border: none;
     cursor: pointer;
@@ -58,25 +58,61 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: -152px;
+
+    &:before{
+        display: none;
+        content: "";
+        background: url('../../img/portfolio_header.png') center center no-repeat;
+        background-size: contain;
+        width: 100%;
+        position: absolute;
+        height: 200px;
+        top: 19%;
+
+        @include tablets() {
+            display: block;
+    }
+        
+    }
+      
+    
 }
 
 .user__name{
-	font-family: 'bernier', Arial, Helvetica, sans-serif;
+	font-family: 'SansusWebissimo', Arial, Helvetica, sans-serif;
 	color:  #ffffff;
-	font-size: 20px;
+	font-size: 30px;
 	line-height: 28px;
 	text-align: center;
     font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;    
+   
+
+    @include tablets() {
+      margin-bottom: 10px;  
+      font-size: 35px;
+    }
+
+    @include laptops() {
+      margin-bottom: 20px;  
+      font-size: 62px;
+    }
     
 }
 
 .user__info{
-	font-family: 'bernier', Arial, Helvetica, sans-serif;
+	font-family: 'SansusWebissimo', Arial, Helvetica, sans-serif;
     color:  #ffffff;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
 	text-align: center;
+
+    @include tablets() {
+      font-size: 16px;
+    }
 }
 
 
