@@ -10,7 +10,7 @@
 
 }
 
-.titles-list {
+.titles__list {
 	display: none;
 	list-style: none;
 	padding-left: 55px;
@@ -24,7 +24,7 @@
   }
 }
 
-.titles-list-item{
+.titles__item{
 	margin-bottom: 10px;
 	font-family: 'Roboto';
   font-weight: 400;
@@ -43,8 +43,8 @@
 
 
 
-.content-list {
-	list-style: none;
+.articles {
+	
 	padding-right: 80px;
     padding-left: 30px;
     padding-top: 35px;

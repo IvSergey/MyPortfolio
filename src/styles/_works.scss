@@ -75,13 +75,44 @@
 }
 
 
-.reviws__title{
-	display: flex;
+.reviews__title{
+	  display: flex;
     align-items: center;
     justify-content:center;
+    
+
+
+    @include tablets() {
+        &:before{
+        display: block;
+        content: "";
+        background: url('../../img/about_header.png') center center no-repeat;
+        background-size: contain;
+        width: 100%;
+        position: absolute;
+        height: 100px;
+        top: 246%;
+          
+       }
+    }
+
+    @include laptops() {
+        &:before{
+        display: block;
+        content: "";
+        background: url('../../img/about_header.png') center center no-repeat;
+        background-size: contain;
+        width: 100%;
+        position: absolute;
+        height: 100px;
+        top: 211%;
+          
+       }
+    }    
+
 }
 
-.reviws__title-name{
+.reviews__title-name{
 	width: 50%;
     font-size: 35px;
     color: #5d5a54;
