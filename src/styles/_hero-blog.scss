@@ -1,12 +1,43 @@
 .hero{
-    height: 100vh;
+    height: 50vh;
+    position: relative;
+    overflow: hidden; 
+}
+
+.hero__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+
+}
+
+.hero__bg-pic{
+    height: 729px;
+}
+
+.hero__title{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 36%;
+    transform:translateY(-50%);
+    text-align: center;
+}
+
+.hero__title-svg{
+    display: none;
+    fill: #e7a731;
+    opacity: 0.3;
     width: 100%;
-    background: url('../../img/about/background/sand.jpg') center center no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    height: 200px;
+
+     @include tablets() {
+      display: block;
+    }
+
+
 }
 
 .hero__socials{
@@ -22,8 +53,8 @@
 }
 
 .hero__menu {
-    width: rem(40px);
-    height: rem(35px);
+    width: 40px;
+    height: 35px;
     // background: url('../../img/about/hamburger.png') center center no-repeat;
     border: none;
     cursor: pointer;
@@ -66,28 +97,15 @@
 }
 
 .hero__user {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-     margin-top: -152px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:23%;
+    transform:translateY(-50%);
 
-     &:before{
-        display: none;
-        content: "";
-        background: url('../../img/blog_header.png') center center no-repeat;
-        background-size: contain;
-        width: 100%;
-        position: absolute;
-        height: 200px;
-        top: 19%;
 
-        @include tablets() {
-            display: block;
-        }
-        
-    }
+     
 }
 
 .user__name{
@@ -97,8 +115,6 @@
 	line-height: 28px;
 	text-align: center;
     font-weight: 500;
-    margin-top: 10px;
-    margin-bottom: 10px; 
     padding-right: 10px;
     padding-left: 10px;
     text-transform: uppercase;   
@@ -130,14 +146,4 @@
 }
 
 
- .hero__scroll-btn{
-    position: absolute;
-    bottom: 15%;
-    cursor: pointer;
-}
-
-.arrow__svg{
-    width: 30px;
-    height: 20px;
-    fill: #fff;
-}
+ 

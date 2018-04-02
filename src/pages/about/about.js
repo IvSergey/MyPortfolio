@@ -14,6 +14,7 @@ import '../../img/sprite/icons/dot left.svg';
 import '../../img/sprite/icons/dot right.svg';
 import '../../img/sprite/icons/ldot left.svg';
 import '../../img/sprite/icons/ldot right.svg';
+import '../../img/sprite/icons/portfolio_header.svg';
 
 
 
@@ -24,6 +25,7 @@ import '../../fonts/Sansus-Webissimo-Regular.ttf';
 // import '../../fonts/bernierregular-regular.ttf';
 
 import map from '../../components/map/index';
+import parallax from '../../components/parallax/index';
 
 
 

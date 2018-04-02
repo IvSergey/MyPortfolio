@@ -1,4 +1,6 @@
 section.section.hero
+  .hero__bg
+    img(src=require("../../img/about/background/sand.jpg"), alt="Пустыня").hero__bg-pic
   .hero__socials
     ul.socials
       a.socials__link(href="#")
@@ -11,12 +13,14 @@ section.section.hero
         svg.socials__svg
           use(xlink:href="../../img/sprite/sprite.svg#in")
   .hero__title
-    .user.hero__user
-      .user__pic
-        img(src=require("../../img/ava.jpg"), alt="Иванов Сергей").user__pic-img
-      h1.user__description
-        .user__name Сергей Иванов 
-        .user__info личный сайт веб разработчика 
+    svg.hero__title-svg
+      use(xlink:href="../../img/sprite/sprite.svg#portfolio_header") 
+  .user.hero__user
+    .user__pic
+      img(src=require("../../img/ava.jpg"), alt="Иванов Сергей").user__pic-img
+    h1.user__description
+      .user__name Сергей Иванов 
+      .user__info личный сайт веб разработчика 
   .hamburger.hero__menu
     svg.hamburger__svg
       use(xlink:href="../../img/sprite/sprite.svg#hamburger")  

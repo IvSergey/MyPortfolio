@@ -12,6 +12,7 @@
   <body>
     <div class="wrapper">
 <section class="section hero">
+  <div class="hero__bg"><img class="hero__bg-pic" src="img/sand.jpg" alt="Пустыня"></div>
   <div class="hero__socials">
     <ul class="socials"><a class="socials__link" href="#">
         <svg class="socials__svg">
@@ -25,13 +26,16 @@
         </svg></a></ul>
   </div>
   <div class="hero__title">
-    <div class="user hero__user">
-      <div class="user__pic"><img class="user__pic-img" src="img/ava.jpg" alt="Иванов Сергей"></div>
-      <h1 class="user__description">
-        <div class="user__name">Сергей Иванов </div>
-        <div class="user__info">личный сайт веб разработчика </div>
-      </h1>
-    </div>
+    <svg class="hero__title-svg">
+      <use xlink:href="../../img/sprite/sprite.svg#portfolio_header"> </use>
+    </svg>
+  </div>
+  <div class="user hero__user">
+    <div class="user__pic"><img class="user__pic-img" src="img/ava.jpg" alt="Иванов Сергей"></div>
+    <h1 class="user__description">
+      <div class="user__name">Сергей Иванов </div>
+      <div class="user__info">личный сайт веб разработчика </div>
+    </h1>
   </div>
   <div class="hamburger hero__menu">
     <svg class="hamburger__svg">

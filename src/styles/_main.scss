@@ -1,14 +1,39 @@
 .wrapper__intro {
   width: 100%;
   height: 100vh;
-  background: url('../../img/about/background/sand.jpg') center center no-repeat;
-  background-size: cover;
+  // background: url('../../img/about/background/sand.jpg') center center no-repeat;
+  // background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
 }
+
+.desert__bg{
+  background: url("../../img/about/background/sand.jpg") bottom left repeat-x;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 6112px;
+    animation: bg 50s linear infinite;
+    
+
+}
+
+@keyframes bg {
+  from {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translate(-3056px);
+  }
+}
+
+// .desert__bg-pic{
+//     height: 729px;
+// }
 
 .auth__btn {
   background-color: rgba(0, 0, 0, 0);
@@ -49,7 +74,7 @@
 }
 
 .intro__front {
-  padding-top: 40px;
+  padding-top: 233px;
 }
 
 
