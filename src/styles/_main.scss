@@ -35,6 +35,15 @@
 //     height: 729px;
 // }
 
+.intro__container {
+    transition: .7s;
+    transform-style: preserve-3d;
+    position: relative;
+    will-change: transform;
+}
+
+
+
 .auth__btn {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #fff;
@@ -51,7 +60,8 @@
   transition: .4s;
   
   &:hover{
-    opacity: 0.5;
+    background-color: #fff;
+    color: rgb(239, 171, 38);
   }
 
   @include tablets() {
@@ -62,12 +72,31 @@
 
 
 
-.intro__front, .intro__back {
+.intro__front {
   min-width: 317px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: rgba(215, 191, 155, 0.6);
+  border-radius: 5px;
+  text-align: center;
+  backface-visibility: hidden;
+
+     @include tablets() {
+      min-width: 344px;
+    }
+
+    @include laptops() {
+      min-width: 380px;
+    }
+}
+
+.intro__back {
+  min-width: 317px;
+  position: absolute;
+  top: -196px;
+  left: -158px;
   background-color: rgba(215, 191, 155, 0.6);
   border-radius: 5px;
   text-align: center;
@@ -368,3 +397,4 @@
   font-size: 14px;
   color: rgba(255, 255, 255, 0.55);
 }
+

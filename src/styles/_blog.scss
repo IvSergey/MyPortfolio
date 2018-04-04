@@ -13,11 +13,10 @@
 .titles__list {
 	display: none;
 	list-style: none;
-	padding-left: 55px;
-	padding-top: 60px;
-    margin-right: 10%;
+	padding-top: 40px;
 
 	@include laptops() {
+    position: fixed;
 	display: block;
   	width: 25%;
   	text-align: right;
@@ -36,6 +35,9 @@
   display: inline-block;
   cursor: pointer;
   
+  &:hover{
+    color: #d18712;
+  }
 }
 
 
@@ -52,7 +54,7 @@
 .articles {
 	
 	padding-right: 80px;
-    padding-left: 30px;
+    padding-left: 36%;
     padding-top: 35px;
 	
 
