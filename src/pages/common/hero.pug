@@ -21,9 +21,35 @@ section.section.hero
     h1.user__description
       .user__name Сергей Иванов 
       .user__info личный сайт веб разработчика 
-  .hamburger.hero__menu
-    svg.hamburger__svg
-      use(xlink:href="../../img/sprite/sprite.svg#hamburger")  
+  
   .arrow-down.hero__scroll-btn
     svg.arrow__svg
       use(xlink:href="../../img/sprite/sprite.svg#arrow")  
+  .hamburger.hero__menu
+    button.gamb__btn#gamb 
+  .header__navigation#navigation
+    ul.navigation__list
+      li.navigation__item
+        svg.dot__svg-left
+          use(xlink:href="../../img/sprite/sprite.svg#dot left")
+        a.navigation__link(href="works.html") Мои работы 
+        svg.dot__svg-right
+          use(xlink:href="../../img/sprite/sprite.svg#dot right")    
+      li.navigation__item
+        svg.dot__svg-left
+          use(xlink:href="../../img/sprite/sprite.svg#dot left")
+        a.navigation__link(href="blog.html") Блог
+        svg.dot__svg-right
+          use(xlink:href="../../img/sprite/sprite.svg#dot right")
+      li.navigation__item
+        svg.dot__svg-left
+          use(xlink:href="../../img/sprite/sprite.svg#dot left")
+        a.navigation__link(href="about.html") Обо мне
+        svg.dot__svg-right
+          use(xlink:href="../../img/sprite/sprite.svg#dot right")
+      li.navigation__item
+        svg.dot__svg-left
+          use(xlink:href="../../img/sprite/sprite.svg#dot left")
+        a.navigation__link(href="index.html") Авторизация
+        svg.dot__svg-right
+          use(xlink:href="../../img/sprite/sprite.svg#dot right")

@@ -10,3 +10,4 @@ import '../../img/sprite/icons/portfolio_header.svg';
 import '../../fonts/Sansus-Webissimo-Regular.ttf';
 
 import parallax from '../../components/parallax/index';
+import hamburger from '../../components/hamburger/index';

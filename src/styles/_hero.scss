@@ -170,3 +170,161 @@
     height: 20px;
     fill: #fff;
 }
+
+
+
+
+.header__navigation {
+
+    position: absolute;
+    display: none;
+    
+    flex-direction: column;
+    
+    
+    
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(239, 171, 38); 
+    opacity: 0.8;
+
+
+}
+
+.header__navigation--active{
+  //     position: fixed;
+  //     top:0;
+  // overflow-y:hidden; 
+
+
+  display: flex;
+      padding: 10px 0px;
+}
+
+
+
+.navigation__list{
+    text-align: center;
+    padding-top: 15%;
+}
+
+.navigation__item {
+  display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 40px;
+    transition:.4s;
+
+    &:hover{
+        fill:#fff;
+    }
+
+  
+
+}
+
+
+
+
+
+
+.navigation__link {
+  font-family: Roboto;  
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.42;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  transition: .5s;
+  padding-right: 10px;
+  padding-left: 10px;
+ 
+}
+
+.gamb__btn{
+
+     position: relative;
+    width: 30px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+    cursor: pointer;
+
+    
+
+   &:before{
+    top: -10px;
+    left: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+
+   
+   }
+
+   &:after{
+    top: 10px;
+    left: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+   
+   }
+}
+
+.gamb__btn--active{
+
+     position: relative;
+    display: initial;
+    width: 30px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+    transform:rotate(45deg);
+    z-index: 10;
+
+  &:before{
+    top: 0px;
+    left: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+  }
+  &:after{
+    top: 0px;
+    left: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+    transform:rotate(90deg);
+  }
+
+
+}
+
