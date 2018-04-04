@@ -45,20 +45,28 @@
    display: block;
     position: absolute;
     width: 100%;
-    bottom: 393px;
+    bottom: 388px;
     margin: 0 auto;
+
+  @include tablets() {
+    bottom: 393px;
+  }
+
 }
 
 
 
 .articles {
-	
-	padding-right: 80px;
-    padding-left: 36%;
+	padding-right: 5%;
+    padding-left: 5%;
     padding-top: 35px;
+    width: 100%;
 	
 
 	@include laptops() {
+    padding-right: 80px;
+    padding-left: 36%;
+    padding-top: 35px;
   	width: 75%;
 	}
 }
