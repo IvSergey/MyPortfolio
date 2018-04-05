@@ -161,10 +161,12 @@
 // }
 
 .section__reviews {
+  background: url('../../img/works/reviews_sand.png') left center no-repeat;
+ background-size: cover;
  text-align: center;
   padding: 0 10px;
-  overflow: auto;
-  background-color: rgb(240, 239, 233);
+  // overflow: auto;
+  // background-color: rgb(240, 239, 233);
 }
 
 
@@ -229,13 +231,37 @@
 
 
 .section__form {
-  background: url('../../img/works/reviews_sand.png') left center no-repeat;
-  background-size: cover;
+   
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(#e5e6e2, 0.7);
-  border-radius: 5px;
+  // background-color: rgba(#e5e6e2, 0.7);
+ 
+}
+
+.blur__form-wrapper{
+      width: 400px;
+    height: 500px;
+    position: relative;
+}
+
+.blur__form{
+  background: url('../../img/works/reviews_sand.png') left center no-repeat;
+  background-size: 950px;
+   border-radius: 5px;
+   position: absolute;
+    height: 100%;
+    width: 100%;
+      z-index: 10;
+    filter: blur(10px);
+    background-position: -281px -383px;
+}
+
+
+.form{
+  position: absolute;
+  z-index: 20;
+
 }
 
 .form__title{

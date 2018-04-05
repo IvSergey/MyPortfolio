@@ -11,3 +11,4 @@ import '../../fonts/Sansus-Webissimo-Regular.ttf';
 
 import parallax from '../../components/parallax/index';
 import hamburger from '../../components/hamburger/index';
+import blur from '../../components/blur/index';

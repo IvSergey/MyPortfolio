@@ -27,11 +27,11 @@ block content
 
   section.section__reviews
     .reviews__title
-      svg.ldot__svg-left
-        use(xlink:href="../../img/sprite/sprite.svg#ldot left")
+      svg.dot__svg-left
+        use(xlink:href="../../img/sprite/sprite.svg#dot left")
           h3.reviews__title-name Что обо мне говорят
-      svg.ldot__svg-right
-        use(xlink:href="../../img/sprite/sprite.svg#ldot right")
+      svg.dot__svg-right
+        use(xlink:href="../../img/sprite/sprite.svg#dot right")
     .reviews__content
       ul.reviews__list
         li.reviews__item
@@ -57,29 +57,32 @@ block content
                 .reviews__img-pic
                 .reviews__author-name Сабанцев Владимир
                 .reviews__author-prof преподаватель
-  section.section__form
-    .form__title
-      svg.ldot__svg-left
-        use(xlink:href="../../img/sprite/sprite.svg#ldot left")
-        h3.form__title-name Связаться со мной
-      svg.ldot__svg-right
-        use(xlink:href="../../img/sprite/sprite.svg#ldot right")
-    .form__content
-      .form-block
-        input(type='text' name='name' placeholder='Имя' required).form__content-input
-      .form-block
-        input(type='text' name='email' placeholder='Email' required).form__content-input
-      .form-block
-        textarea(name='message' placeholder='Ваше сообщение' required).form__content-textarea
-      .form-btn
-        ul.form-btn__list
-          li.form-btn__item
-            button(type='submit').form-btn__link Отправить
-          li.form-btn__item
-            button(type='reset').form-btn__link Очистить
-    .works__arrow
-      a(href='#').arrow__link
-        svg(width='25' height='25').arrow__icon
-          use(xlink:href='../../img/sprite/sprite.svg#portf_arrow_up')
+    .section__form
+      .blur__form-wrapper
+        .blur__form
+        .form  
+          .form__title
+            svg.ldot__svg-left
+              use(xlink:href="../../img/sprite/sprite.svg#ldot left")
+              h3.form__title-name Связаться со мной
+            svg.ldot__svg-right
+              use(xlink:href="../../img/sprite/sprite.svg#ldot right")
+          .form__content
+            .form-block
+              input(type='text' name='name' placeholder='Имя' required).form__content-input
+            .form-block
+              input(type='text' name='email' placeholder='Email' required).form__content-input
+            .form-block
+              textarea(name='message' placeholder='Ваше сообщение' required).form__content-textarea
+            .form-btn
+              ul.form-btn__list
+                li.form-btn__item
+                  button(type='submit').form-btn__link Отправить
+                li.form-btn__item
+                  button(type='reset').form-btn__link Очистить
+      .works__arrow
+        a(href='#').arrow__link
+          svg(width='25' height='25').arrow__icon
+            use(xlink:href='../../img/sprite/sprite.svg#portf_arrow_up')
 
   include ../common/footer
