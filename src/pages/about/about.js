@@ -27,6 +27,7 @@ import '../../fonts/Sansus-Webissimo-Regular.ttf';
 import map from '../../components/map/index';
 import parallax from '../../components/parallax/index';
 import hamburger from '../../components/hamburger/index';
+import skills from '../../components/scrollCircle/index';
 
 
 

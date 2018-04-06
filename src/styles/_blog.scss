@@ -10,6 +10,22 @@
 
 }
 
+.titles__menu{
+    position: fixed;
+    top: 73%;
+    transform: translate(99%,-50%);
+    width: 8px;
+    height: 44px;
+    border-radius: 0 100% 100% 0/0 50% 50% 0;
+    background-color: #d18712;
+    cursor: pointer;
+    margin-left: -8px;
+
+    @include laptops() {
+        display: none;
+  }
+}
+
 .titles__list {
 	display: none;
 	list-style: none;

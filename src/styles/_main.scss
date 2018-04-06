@@ -12,6 +12,7 @@
 
 .desert__bg{
   background: url("../../img/about/background/sand.jpg") bottom left repeat-x;
+  background-size: contain;
     position: absolute;
     left: 0;
     height: 100%;
