@@ -1,8 +1,8 @@
 .wrapper__intro {
   width: 100%;
   height: 100vh;
-  background: url('../../img/about/background/sand.jpg') center center no-repeat;
-  background-size: cover;
+  // background: url('../../img/about/background/sand.jpg') center center no-repeat;
+  // background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,30 +10,71 @@
   overflow: hidden;
 }
 
+.desert__bg{
+  background: url("../../img/about/background/sand.jpg") bottom left repeat-x;
+  background-size: contain;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 6112px;
+    animation: bg 90s linear infinite;
+    
+
+}
+
+@keyframes bg {
+  from {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translate(-3056px);
+  }
+}
+
+// .desert__bg-pic{
+//     height: 729px;
+// }
+
+.intro__container {
+    transition: .7s;
+    transform-style: preserve-3d;
+    position: relative;
+    will-change: transform;
+}
+
+
+
 .auth__btn {
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #fff;
   border-radius: 5px;
-  padding: 14px 28px;
+  padding: 10px 10px;
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   color: #fff;
   position: absolute;
-  top: 5%;
-  right: 33%;
+  top: 10%;
+  
   cursor: pointer;
   transition: .4s;
-  // &:hover {
-  //   background-color: $dark-green;
-  //   border: 1px solid #729e19;
-  // }
+  
+  &:hover{
+    background-color: #fff;
+    color: rgb(239, 171, 38);
+  }
+
+  @include tablets() {
+      right: 3%;
+      top:3%;
+    }
 }
 
 
 
-.intro__front, .intro__back {
-  min-width: 380px;
+.intro__front {
+  min-width: 317px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -42,6 +83,33 @@
   border-radius: 5px;
   text-align: center;
   backface-visibility: hidden;
+
+     @include tablets() {
+      min-width: 344px;
+    }
+
+    @include laptops() {
+      min-width: 380px;
+    }
+}
+
+.intro__back {
+  min-width: 317px;
+  position: absolute;
+  top: -196px;
+  left: -158px;
+  background-color: rgba(215, 191, 155, 0.6);
+  border-radius: 5px;
+  text-align: center;
+  backface-visibility: hidden;
+
+     @include tablets() {
+      min-width: 344px;
+    }
+
+    @include laptops() {
+      min-width: 380px;
+    }
 }
 
 .js-intro-rotate {
@@ -49,7 +117,7 @@
 }
 
 .intro__front {
-  padding-top: 40px;
+  padding-top: 233px;
 }
 
 
@@ -68,23 +136,55 @@
   font-size: 0;
 }
 
-.front-btn__item, .form-btn__item {
+.intro__btn, .form__btn{
+  width: 50%;
+  display: inline-block;
+  border: none;
+  border-right: 2px solid rgba(222, 227, 231, 0.5);
+  background-color: #efab26;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  
+  cursor: pointer;
+  padding: 12px 0;
+  transition: .4s;
+
+   &:last-child {
+    border-right: none;
+  }
+
+    &:hover {
+    background-color: #d18712;
+  }
+
+   @include tablets() {
+       font-size: 16px;
+    }
+}
+
+.front-btn__item {
   display: inline-block;
   border-right: 2px solid rgba(222, 227, 231, 0.5);
   &:last-child {
     border-right: none;
   }
+ 
 }
 
 .front-btn__item {
   width: 33.33%;
 }
 
-.form-btn__item {
-  width: 50%;
-}
+// .form-btn__item {
+//   width: 50%;
+// }
 
-.front-btn__link, .form-btn__link {
+.front-btn__link {
   width: 100%;
   background-color: #efab26;
   font-family: 'Roboto';
@@ -98,9 +198,17 @@
   cursor: pointer;
   padding: 12px 0;
   transition: .4s;
-  // &:hover {
-  //   background-color: $dark-green;
-  // }
+  &:hover {
+    background-color: #d18712;
+  }
+  @include tablets() {
+       font-size: 16px;
+    }
+}
+
+.socials{
+  margin-top: 55px;
+  margin-bottom: 42px;
 }
 
 .hero__socials {
@@ -114,6 +222,7 @@
   display: flex;
     align-items: center;
     justify-content:center;
+    margin: 10px;
 }
 
 .index__title-name {
@@ -143,8 +252,12 @@
   margin-bottom: 20px;
 }
 
+.form-check{
+  margin-bottom: 24px;
+}
+
 .form-check__content{
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .form-block__icon {
@@ -185,6 +298,7 @@
 .form-check__title {
   font-weight: 700;
   margin-bottom: 10px;
+  
 }
 
 .form-check__subtitle {
@@ -273,7 +387,7 @@
 
 .intro__copyright {
   position: absolute;
-  bottom: 5%;
+  bottom: 10%;
   text-align: center;
   line-height: 24px;
 }
@@ -284,3 +398,4 @@
   font-size: 14px;
   color: rgba(255, 255, 255, 0.55);
 }
+

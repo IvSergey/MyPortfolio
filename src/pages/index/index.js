@@ -5,3 +5,5 @@ import '../../img/sprite/icons/login.svg';
 import '../../img/sprite/icons/password.svg';
 
 import '../../fonts/Sansus-Webissimo-Regular.ttf';
+
+import flip from '../../components/flip/index';

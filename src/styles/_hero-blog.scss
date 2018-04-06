@@ -1,16 +1,47 @@
 .hero{
-    height: 100vh;
+    height: 50vh;
+    position: relative;
+    overflow: hidden; 
+}
+
+.hero__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+
+}
+
+.hero__bg-pic{
+    height: 729px;
+}
+
+.hero__title{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 36%;
+    transform:translateY(-50%);
+    text-align: center;
+}
+
+.hero__title-svg{
+    display: none;
+    fill: #e7a731;
+    opacity: 0.3;
     width: 100%;
-    background: url('../../img/about/background/sand.jpg') center center no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    height: 200px;
+
+     @include tablets() {
+      display: block;
+    }
+
+
 }
 
 .hero__socials{
-	position: absolute;
+    position: absolute;
     width: 100%;
     top: 0;
 }
@@ -19,11 +50,29 @@
     width: 30px;
     height: 20px;
     fill: #fff;
+    opacity: 0.7;
+    transition:.4s;
+
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.socials__svg-hero{
+      width: 30px;
+    height: 20px;
+    fill: #fff;
+    transition:.4s;
+    
+
+    &:hover{
+       fill: #d18712;
+    }
 }
 
 .hero__menu {
-    width: rem(40px);
-    height: rem(35px);
+    width: 40px;
+    height: 35px;
     // background: url('../../img/about/hamburger.png') center center no-repeat;
     border: none;
     cursor: pointer;
@@ -66,28 +115,15 @@
 }
 
 .hero__user {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-     margin-top: -152px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:23%;
+    transform:translateY(-50%);
 
-     &:before{
-        display: none;
-        content: "";
-        background: url('../../img/blog_header.png') center center no-repeat;
-        background-size: contain;
-        width: 100%;
-        position: absolute;
-        height: 200px;
-        top: 19%;
 
-        @include tablets() {
-            display: block;
-        }
-        
-    }
+     
 }
 
 .user__name{
@@ -97,8 +133,6 @@
 	line-height: 28px;
 	text-align: center;
     font-weight: 500;
-    margin-top: 10px;
-    margin-bottom: 10px; 
     padding-right: 10px;
     padding-left: 10px;
     text-transform: uppercase;   
@@ -130,14 +164,161 @@
 }
 
 
- .hero__scroll-btn{
+
+.header__navigation {
+
     position: absolute;
-    bottom: 15%;
-    cursor: pointer;
+    // display: none;
+    
+    flex-direction: column;
+    
+    
+    
+    align-items: center;
+    width: 0;
+    height: 100%;
+    background-color: rgb(239, 171, 38); 
+    opacity: 0.8;
+    overflow: hidden;
+    transition: .4s;
+
+
 }
 
-.arrow__svg{
-    width: 30px;
-    height: 20px;
-    fill: #fff;
+.header__navigation--active{
+  //     position: fixed;
+  //     top:0;
+  // overflow-y:hidden; 
+
+    width: 100%;
+    transition: .4s;
+  // display: flex;
+      padding: 10px 0px;
+
 }
+
+.navigation__list{
+    text-align: center;
+    
+}
+
+.navigation__item {
+  display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 25px;
+    transition:.4s;
+
+    &:hover{
+        fill:#fff;
+    }
+
+  
+
+}
+
+
+
+
+
+
+.navigation__link {
+  font-family: Roboto;  
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.42;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  transition: .5s;
+  padding-right: 10px;
+  padding-left: 10px;
+ 
+}
+
+.gamb__btn{
+
+     position: relative;
+    width: 30px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+    cursor: pointer;
+
+    
+
+   &:before{
+    top: -10px;
+    left: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+
+   
+   }
+
+   &:after{
+    top: 10px;
+    left: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+   
+   }
+}
+
+.gamb__btn--active{
+
+     position: relative;
+    display: initial;
+    width: 30px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+    transform:rotate(45deg);
+    z-index: 10;
+
+  &:before{
+    top: 0px;
+    left: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+  }
+  &:after{
+    top: 0px;
+    left: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+    transform:rotate(90deg);
+  }
+
+
+}
+
+ 

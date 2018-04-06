@@ -13,55 +13,88 @@
     <div class="wrapper">
       <div class="header-blog__hidden"></div>
 <section class="section hero">
+  <div class="hero__bg"><img class="hero__bg-pic" src="img/sand.jpg" alt="Пустыня"></div>
   <div class="hero__socials">
-    <ul class="socials"><a class="socials__link" href="#">
-        <svg class="socials__svg">
+    <ul class="socials"><a class="socials__link" href="https://vk.com/id329517">
+        <svg class="socials__svg-hero">
           <use xlink:href="../../img/sprite/sprite.svg#vk"></use>
-        </svg></a><a class="socials__link" href="#">
-        <svg class="socials__svg">
+        </svg></a><a class="socials__link" href="https://github.com/IvSergey">
+        <svg class="socials__svg-hero">
           <use xlink:href="../../img/sprite/sprite.svg#git"></use>
-        </svg></a><a class="socials__link" href="#">
-        <svg class="socials__svg">
+        </svg></a><a class="socials__link" href="https://ivsergey.github.io/MyPortfolio/build/index.html">
+        <svg class="socials__svg-hero">
           <use xlink:href="../../img/sprite/sprite.svg#in"></use>
         </svg></a></ul>
   </div>
   <div class="hero__title">
-    <div class="section-title"><img class="section-title__pic" src="" alt=""></div>
-    <div class="user hero__user">
-      <div class="user__pic"><img class="user__pic-img" src="img/ava.jpg" alt="Иванов Сергей"></div>
-      <h1 class="user__description">
-        <div class="blog__title">
-          <svg class="dot__svg-left">
-            <use xlink:href="../../img/sprite/sprite.svg#dot left"></use>
-            <div class="user__name">Блог </div>
-          </svg>
-          <svg class="dot__svg-right">
-            <use xlink:href="../../img/sprite/sprite.svg#dot right"> </use>
-          </svg>
-        </div>
-        <div class="user__info">статьи, которые я написал</div>
-      </h1>
-    </div>
+    <svg class="hero__title-svg">
+      <use xlink:href="../../img/sprite/sprite.svg#blog_header"></use>
+    </svg>
+  </div>
+  <div class="user hero__user">
+    <div class="user__pic"><img class="user__pic-img" src="img/ava.jpg" alt="Иванов Сергей"></div>
+    <h1 class="user__description">
+      <div class="blog__title">
+        <svg class="dot__svg-left">
+          <use xlink:href="../../img/sprite/sprite.svg#dot left"></use>
+          <div class="user__name">Блог </div>
+        </svg>
+        <svg class="dot__svg-right">
+          <use xlink:href="../../img/sprite/sprite.svg#dot right"> </use>
+        </svg>
+      </div>
+      <div class="user__info">статьи, которые я написал</div>
+    </h1>
   </div>
   <div class="hamburger hero__menu">
-    <svg class="hamburger__svg">
-      <use xlink:href="../../img/sprite/sprite.svg#hamburger"> </use>
-    </svg>
+    <button class="gamb__btn" id="gamb"> </button>
   </div>
-  <div class="arrow-down hero__scroll-btn">
-    <svg class="arrow__svg">
-      <use xlink:href="../../img/sprite/sprite.svg#arrow"> </use>
-    </svg>
+  <div class="header__navigation" id="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__item">
+        <svg class="dot__svg-left">
+          <use xlink:href="../../img/sprite/sprite.svg#dot left"></use>
+        </svg><a class="navigation__link" href="works.html">Мои работы </a>
+        <svg class="dot__svg-right">
+          <use xlink:href="../../img/sprite/sprite.svg#dot right">   </use>
+        </svg>
+      </li>
+      <li class="navigation__item">
+        <svg class="dot__svg-left">
+          <use xlink:href="../../img/sprite/sprite.svg#dot left"></use>
+        </svg><a class="navigation__link" href="blog.html">Блог</a>
+        <svg class="dot__svg-right">
+          <use xlink:href="../../img/sprite/sprite.svg#dot right"></use>
+        </svg>
+      </li>
+      <li class="navigation__item">
+        <svg class="dot__svg-left">
+          <use xlink:href="../../img/sprite/sprite.svg#dot left"></use>
+        </svg><a class="navigation__link" href="about.html">Обо мне</a>
+        <svg class="dot__svg-right">
+          <use xlink:href="../../img/sprite/sprite.svg#dot right"></use>
+        </svg>
+      </li>
+      <li class="navigation__item">
+        <svg class="dot__svg-left">
+          <use xlink:href="../../img/sprite/sprite.svg#dot left"></use>
+        </svg><a class="navigation__link" href="index.html">Авторизация</a>
+        <svg class="dot__svg-right">
+          <use xlink:href="../../img/sprite/sprite.svg#dot right"></use>
+        </svg>
+      </li>
+    </ul>
   </div>
 </section>
       <section class="section blog">
-        <div class="about__triangles">
+        <div class="blog__triangles">
           <svg class="triangles__tr" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
             <polygon class="triangles__left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
             <polygon class="triangles__right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
           </svg>
         </div>
         <div class="container blog__container">
+          <div class="titles__menu"></div>
           <ul class="titles__list">
             <li class="titles__item">
               <p>Самое важное в SASS</p>
@@ -128,13 +161,13 @@
           <li class="footer__menu__item"><a class="footer__menu-link" href="">Блог</a></li>
           <li class="footer__menu-item"><a class="footer__menu-link" href="">Авторизация</a></li></a></li>
     </ul>
-    <ul class="footer__socials"><a class="socials__link" href="#">
+    <ul class="footer__socials"><a class="socials__link" href="https://vk.com/id329517">
         <svg class="socials__svg">
           <use xlink:href="../../img/sprite/sprite.svg#vk"></use>
-        </svg></a><a class="socials__link" href="#">
+        </svg></a><a class="socials__link" href="https://github.com/IvSergey">
         <svg class="socials__svg">
           <use xlink:href="../../img/sprite/sprite.svg#git"></use>
-        </svg></a><a class="socials__link" href="#">
+        </svg></a><a class="socials__link" href="https://ivsergey.github.io/MyPortfolio/build/index.html">
         <svg class="socials__svg">
           <use xlink:href="../../img/sprite/sprite.svg#in"></use>
         </svg></a></ul>

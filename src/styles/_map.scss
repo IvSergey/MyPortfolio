@@ -22,15 +22,17 @@
     padding: 35px;
      
       @include tablets() {
-       transform: translate(36%,27%);
+        top: 15%;
+        left: 25%;
         position: absolute;
         z-index: 1;
     }
 
       @include laptops() {
-       transform: translate(90%,27%);
-        
+        left: 35%;
     }
+
+   
       
 }
 

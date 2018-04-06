@@ -46,8 +46,8 @@
 .content-presentation__about{
     @include tablets() {
        
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 }
 
@@ -131,8 +131,7 @@
     font-weight: 400;
     text-align: left;
     line-height: 24px;
-    padding-left: 3%;
-    padding-right: 3%
+    margin-bottom: 10px;
 
 
 } 
@@ -140,8 +139,8 @@
 .content-skills__text{
     @include tablets() {
        
-        padding-left: 12%;
-        padding-right: 12%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 
     @include laptops() {
@@ -190,6 +189,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-left: 0;
+    margin-bottom: 20px;
 
       @include laptops() {
        flex-wrap: nowrap;

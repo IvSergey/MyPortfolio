@@ -6,7 +6,9 @@ block variables
 block content
   
   .wrapper__intro
-    button.auth__btn Авторизоваться
+    .desert__bg
+      
+    button.auth__btn#btn Авторизоваться
     .intro__container
       .intro__front
         .hero__title
@@ -18,13 +20,13 @@ block content
               .user__info Личный сайт разработчика
         .hero__socials
           ul.socials
-            a.socials__link(href="#")
+            a.socials__link(href="https://vk.com/id329517")
               svg.socials__svg
                 use(xlink:href="../../img/sprite/sprite.svg#vk")
-            a.socials__link(href="#")
+            a.socials__link(href="https://github.com/IvSergey")
               svg.socials__svg
                 use(xlink:href="../../img/sprite/sprite.svg#git")
-            a.socials__link(href="#")
+            a.socials__link(href="https://ivsergey.github.io/MyPortfolio/build/index.html")
               svg.socials__svg
                 use(xlink:href="../../img/sprite/sprite.svg#in")
         .front-btn
@@ -72,14 +74,8 @@ block content
               span.block-content__radio-hidden
               span.form-check__subtitle Не уверен
           .form-btn
-            -
-              var back_btn = [
-                ['На главную', 'index.html'],
-                ['Войти', '#'],
-              ]
-            ul.form-btn__list
-              each item in back_btn
-                li.form-btn__item
-                  a(href=`${item[1]}`).form-btn__link #{item[0]}
+            button(type="button").intro__btn#main-btn На главную
+            button(type="submit").form__btn Войти 
+            
     .intro__copyright
       .copyright__text © Сергей Иванов <br> создано с любовью в LoftSchool | 2018

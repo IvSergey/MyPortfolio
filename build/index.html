@@ -12,7 +12,8 @@
   <body>
     <div class="wrapper">
       <div class="wrapper__intro">
-        <button class="auth__btn">Авторизоваться</button>
+        <div class="desert__bg"></div>
+        <button class="auth__btn" id="btn">Авторизоваться</button>
         <div class="intro__container">
           <div class="intro__front">
             <div class="hero__title">
@@ -25,13 +26,13 @@
               </div>
             </div>
             <div class="hero__socials">
-              <ul class="socials"><a class="socials__link" href="#">
+              <ul class="socials"><a class="socials__link" href="https://vk.com/id329517">
                   <svg class="socials__svg">
                     <use xlink:href="../../img/sprite/sprite.svg#vk"></use>
-                  </svg></a><a class="socials__link" href="#">
+                  </svg></a><a class="socials__link" href="https://github.com/IvSergey">
                   <svg class="socials__svg">
                     <use xlink:href="../../img/sprite/sprite.svg#git"></use>
-                  </svg></a><a class="socials__link" href="#">
+                  </svg></a><a class="socials__link" href="https://ivsergey.github.io/MyPortfolio/build/index.html">
                   <svg class="socials__svg">
                     <use xlink:href="../../img/sprite/sprite.svg#in"></use>
                   </svg></a></ul>
@@ -86,10 +87,8 @@
                 </label>
               </div>
               <div class="form-btn">
-                <ul class="form-btn__list">
-                  <li class="form-btn__item"><a class="form-btn__link" href="index.html">На главную</a></li>
-                  <li class="form-btn__item"><a class="form-btn__link" href="#">Войти</a></li>
-                </ul>
+                <button class="intro__btn" type="button" id="main-btn">На главную</button>
+                <button class="form__btn" type="submit">Войти </button>
               </div>
             </form>
           </div>

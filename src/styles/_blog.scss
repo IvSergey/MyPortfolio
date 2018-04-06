@@ -10,14 +10,29 @@
 
 }
 
+.titles__menu{
+    position: fixed;
+    top: 73%;
+    transform: translate(99%,-50%);
+    width: 8px;
+    height: 44px;
+    border-radius: 0 100% 100% 0/0 50% 50% 0;
+    background-color: #d18712;
+    cursor: pointer;
+    margin-left: -8px;
+
+    @include laptops() {
+        display: none;
+  }
+}
+
 .titles__list {
 	display: none;
 	list-style: none;
-	padding-left: 55px;
-	padding-top: 60px;
-    margin-right: 10%;
+	padding-top: 40px;
 
 	@include laptops() {
+    position: fixed;
 	display: block;
   	width: 25%;
   	text-align: right;
@@ -36,21 +51,38 @@
   display: inline-block;
   cursor: pointer;
   
+  &:hover{
+    color: #d18712;
+  }
+}
+
+
+.blog__triangles{
+   display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 388px;
+    margin: 0 auto;
+
+  @include tablets() {
+    bottom: 393px;
+  }
+
 }
 
 
 
-
-
-
 .articles {
-	
-	padding-right: 80px;
-    padding-left: 30px;
+	padding-right: 5%;
+    padding-left: 5%;
     padding-top: 35px;
+    width: 100%;
 	
 
 	@include laptops() {
+    padding-right: 80px;
+    padding-left: 36%;
+    padding-top: 35px;
   	width: 75%;
 	}
 }
@@ -96,6 +128,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 

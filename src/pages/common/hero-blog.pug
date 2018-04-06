@@ -1,32 +1,56 @@
 section.section.hero
+  .hero__bg
+    img(src=require("../../img/about/background/sand.jpg"), alt="Пустыня").hero__bg-pic
   .hero__socials
     ul.socials
-      a.socials__link(href="#")
-        svg.socials__svg
+      a.socials__link(href="https://vk.com/id329517")
+        svg.socials__svg-hero
           use(xlink:href="../../img/sprite/sprite.svg#vk")
-      a.socials__link(href="#")
-        svg.socials__svg
+      a.socials__link(href="https://github.com/IvSergey")
+        svg.socials__svg-hero
           use(xlink:href="../../img/sprite/sprite.svg#git")
-      a.socials__link(href="#")
-        svg.socials__svg
+      a.socials__link(href="https://ivsergey.github.io/MyPortfolio/build/index.html")
+        svg.socials__svg-hero
           use(xlink:href="../../img/sprite/sprite.svg#in")
   .hero__title
-    .section-title
-      img(src="", alt="").section-title__pic
-    .user.hero__user
-      .user__pic
-        img(src=require("../../img/ava.jpg"), alt="Иванов Сергей").user__pic-img
-      h1.user__description
-        .blog__title
-          svg.dot__svg-left
-            use(xlink:href="../../img/sprite/sprite.svg#dot left")
-            .user__name Блог 
-          svg.dot__svg-right
-            use(xlink:href="../../img/sprite/sprite.svg#dot right")  
-        .user__info статьи, которые я написал
+    svg.hero__title-svg
+      use(xlink:href="../../img/sprite/sprite.svg#blog_header")
+  .user.hero__user
+    .user__pic
+      img(src=require("../../img/ava.jpg"), alt="Иванов Сергей").user__pic-img
+    h1.user__description
+      .blog__title
+        svg.dot__svg-left
+          use(xlink:href="../../img/sprite/sprite.svg#dot left")
+          .user__name Блог 
+        svg.dot__svg-right
+          use(xlink:href="../../img/sprite/sprite.svg#dot right")  
+      .user__info статьи, которые я написал
   .hamburger.hero__menu
-    svg.hamburger__svg
-      use(xlink:href="../../img/sprite/sprite.svg#hamburger")  
-  .arrow-down.hero__scroll-btn
-    svg.arrow__svg
-      use(xlink:href="../../img/sprite/sprite.svg#arrow")  
+    button.gamb__btn#gamb 
+  .header__navigation#navigation
+    ul.navigation__list
+      li.navigation__item
+        svg.dot__svg-left
+          use(xlink:href="../../img/sprite/sprite.svg#dot left")
+        a.navigation__link(href="works.html") Мои работы 
+        svg.dot__svg-right
+          use(xlink:href="../../img/sprite/sprite.svg#dot right")    
+      li.navigation__item
+        svg.dot__svg-left
+          use(xlink:href="../../img/sprite/sprite.svg#dot left")
+        a.navigation__link(href="blog.html") Блог
+        svg.dot__svg-right
+          use(xlink:href="../../img/sprite/sprite.svg#dot right")
+      li.navigation__item
+        svg.dot__svg-left
+          use(xlink:href="../../img/sprite/sprite.svg#dot left")
+        a.navigation__link(href="about.html") Обо мне
+        svg.dot__svg-right
+          use(xlink:href="../../img/sprite/sprite.svg#dot right")
+      li.navigation__item
+        svg.dot__svg-left
+          use(xlink:href="../../img/sprite/sprite.svg#dot left")
+        a.navigation__link(href="index.html") Авторизация
+        svg.dot__svg-right
+          use(xlink:href="../../img/sprite/sprite.svg#dot right")
