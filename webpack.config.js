@@ -58,7 +58,7 @@ module.exports = {
             template: PATHS.src + '/pages/blog/blog.pug'
         }),
         // Для очистки папки build
-        // new CleanWebpackPlugin('build'),
+        new CleanWebpackPlugin('build'),
         // Подключение отельных css файлов (когда не работает срабатывает fallback)
         new ExtractTextPlugin({
             filename: './css/[name].css'
