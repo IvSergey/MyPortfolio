@@ -108,7 +108,7 @@ module.exports = {
           	},
 
           	{
-          		test: /\.(jpg|png|svg)$/,
+          		test: /\.(jpg|png)$/,
           		loader: 'file-loader',
           		options: {
           			name: 'img/[name].[ext]',
@@ -127,26 +127,26 @@ module.exports = {
             },
 
             {
-                test: /\.svg$/,
-                use: [
-                  {
-                    loader: 'svg-sprite-loader',
-                    options: {
-                      extract: true,
-                      spriteFilename: 'img/sprite/sprite.svg',
-                    }
+              test: /\.svg$/,
+              use: [
+                {
+                  loader: 'svg-sprite-loader',
+                  options: {
+                    extract: true,
+                    spriteFilename: 'img/sprite/sprite.svg',
+                  }
+                },
+                {
+                  loader: 'svgo-loader',
+                  options: {
+                    plugins: [
+                      { removeNonInheritableGroupAttrs: true },
+                      { collapseGroups: true },
+                      { removeAttrs: { attrs: '(fill|stroke)' } }
+                    ],
                   },
-                  {
-                    loader: 'svgo-loader',
-                    options: {
-                      plugins: [
-                        { removeNonInheritableGroupAttrs: true },
-                        { collapseGroups: true },
-                        { removeAttrs: { attrs: '(fill|stroke)' } }
-                      ],
-                    },
-                  },
-                ],
+                },
+              ],
             },
 
             {
