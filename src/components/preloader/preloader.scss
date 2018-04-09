@@ -11,13 +11,24 @@
 //   // min-height: 100%;
 //   height: 100%;
 // }
+.js-preloader-wrapper{
+   width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    
+
+}
 .preloader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('../../img/desert_prel_bg.jpg');
+  background-image: url(../../img/desert_prel_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -27,6 +38,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  transition:.4s;
 }
 
 .preloader__svg {
