@@ -9,3 +9,5 @@ import '../../fonts/Sansus-Webissimo-Regular.ttf';
 
 import flip from '../../components/flip/index';
 import preloader from '../../components/preloader/index';
+
+preloader.show();

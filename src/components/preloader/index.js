@@ -7,7 +7,7 @@ const preloader = (function() {
   const preloadBlock = document.querySelector('.js-preloader');
   const preloadText = document.querySelector('.js-preloader-text');
   const regImgUrl = /background-image: url\(['"]?(.*?)['"]?\)/i;
-  const wrapper = document.querySelector('.js-preloader-wrapper');
+  const wrapper = document.querySelector('.js-wrapper');
   const imgArr = [];
   let progress = 0;
   let img;
@@ -62,3 +62,4 @@ const preloader = (function() {
 })();
 
 module.exports = preloader;
+
