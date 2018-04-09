@@ -1,0 +1,63 @@
+// @import "../../scss/variables";
+// @import "../../scss/mixins";
+// @import "../../scss/fonts";
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../img/desert_prel_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  // background-color: $dark-main;
+  z-index: 9997;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.preloader__svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  z-index: 9998;
+}
+
+.preloader__svg-first {
+  stroke: #fff;
+  animation: spin 3s infinite linear;
+  animation-delay: 1s;
+}
+
+.preloader__svg-second {
+  stroke: #fff;
+  animation: spin 3s infinite linear;
+  animation-delay: 1s;
+}
+
+.preloader__svg-third {
+  stroke: #fff;
+  animation: spin 3s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    stroke-dasharray: 0 500;
+  }
+  to {
+    stroke-dasharray: 500 0;
+  }
+}
+
+.preloader__text {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
