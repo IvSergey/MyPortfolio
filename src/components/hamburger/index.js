@@ -6,10 +6,12 @@ gamb.addEventListener('click', function() {
     	document.body.style.overflowY ='auto';
     	navigation.classList.remove('header__navigation--active');
     gamb.classList.remove('gamb__btn--active');
+    document.getElementsByClassName('navigation__list')[0].style= 'opacity: 0';
   }
   else {
     document.body.style.overflowY ='hidden';
     navigation.classList.add('header__navigation--active');
     gamb.classList.add('gamb__btn--active');
+    document.getElementsByClassName('navigation__list')[0].style= 'opacity: 1';
   }
 });

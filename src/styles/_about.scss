@@ -155,6 +155,39 @@
 
 .about__content-skills {
     overflow: hidden;
+    &:hover{
+        .circle__second_f1{
+           stroke-dasharray: 226.08 282.6; 
+        }
+        .circle__second_f2{
+            stroke-dasharray: 183.69 282.6; 
+        }
+        .circle__second_f3{
+            stroke-dasharray: 127.17 282.6; 
+        }
+        .circle__second_b1{
+            stroke-dasharray: 84.78 282.6; 
+        }
+        .circle__second_b2{
+            stroke-dasharray: 84.78 282.6; 
+        }
+        .circle__second_b3{
+            stroke-dasharray: 70.65 282.6; 
+        }
+        .circle__second_b4{
+            stroke-dasharray: 70.65 282.6; 
+        }
+        .circle__second_w1{
+            stroke-dasharray: 226.08 282.6; 
+        }
+        .circle__second_w2{
+            stroke-dasharray: 211.95 282.6; 
+        }
+        .circle__second_w3{
+            stroke-dasharray: 84.78 282.6; 
+        }
+
+    }
     .content-skills__title {
         width: 35%;
         font-family: 'SansusWebissimo', Arial, Helvetica, sans-serif;
@@ -184,6 +217,8 @@
     list-style: none;
     margin: 0;
     padding-left: 0;
+
+
 }
 
 .skills-row__list{
@@ -256,8 +291,12 @@
     .circle__second {
         stroke: #e7a731;
         stroke-dasharray: .0010 282.6;
-        transition: all 1s;
+        transition: all 2s;
     }
+
+
+    
+
 
     .row-chart__circles .circle-0 {
         stroke-dasharray: .001 282.6;

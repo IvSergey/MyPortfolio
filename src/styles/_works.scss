@@ -91,7 +91,7 @@
         width: 100%;
         position: absolute;
         height: 100px;
-        top: 246%;
+       
           
        }
     }
@@ -105,7 +105,7 @@
         width: 100%;
         position: absolute;
         height: 100px;
-        top: 211%;
+        
           
        }
     }    
@@ -160,10 +160,20 @@
 //   width: 100%;
 // }
 
-.section__reviews {
+.reviews__bg{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%; 
   background: url('../../img/works/reviews_sand.png') left center no-repeat;
- background-size: cover;
+ background-size: 100% 100%;
  text-align: center;
+ z-index: -1;
+}
+
+.section__reviews {
+  position: relative;
   padding: 0 10px;
   // overflow: auto;
   // background-color: rgb(240, 239, 233);

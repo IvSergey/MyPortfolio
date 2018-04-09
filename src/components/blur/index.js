@@ -4,12 +4,13 @@ var blur = (function() {
 
   return {
     set: function() {
-      var imgWith = document.querySelector('.section__reviews').offsetWidth,
+      var imgWith = document.querySelector('.reviews__bg').offsetWidth,
+        imgHeight = document.querySelector('.reviews__bg').offsetHeight,
         posLeft = -wrapper.offsetLeft,
         posTop = -wrapper.offsetTop,
         blurCSS = form.style;
 
-      blurCSS.backgroundSize = imgWith + 'px' + ' ' + 'auto';
+      blurCSS.backgroundSize = imgWith + 'px' + ' ' + imgHeight + 'px';
       blurCSS.backgroundPosition = posLeft + 'px' + ' ' + posTop + 'px';
 
     },
