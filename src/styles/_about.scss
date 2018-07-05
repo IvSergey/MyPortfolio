@@ -18,7 +18,7 @@
     bottom: -4px;
     margin: 0 auto;
 
-        @include desktop() {
+        @include desktops() {
         bottom: 110px;
     }
 }
