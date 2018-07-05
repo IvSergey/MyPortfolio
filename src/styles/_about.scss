@@ -18,6 +18,11 @@
     bottom: -4px;
     margin: 0 auto;
 
+        @include desktop() {
+        bottom: 110px;
+    }
+}
+
   
 
 
