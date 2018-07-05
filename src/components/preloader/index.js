@@ -13,7 +13,7 @@ const preloader = (function() {
   let img;
   let allImg;
   let shadowImg;
-
+  
   return {
     shadowImgAdd: function() {
       shadowImg = document.createElement('img');
@@ -33,7 +33,7 @@ const preloader = (function() {
             img = (preloadImg[i].getAttribute('style').slice(22, -2));
             this.shadowImgAdd();
           }
-
+          console.log(img);
           allImg = 100 / imgArr.length;
 
           for (let j = 0; j < imgArr.length; j++) {
@@ -61,5 +61,5 @@ const preloader = (function() {
   };
 })();
 
-module.exports = preloader;
 
+module.exports = preloader;

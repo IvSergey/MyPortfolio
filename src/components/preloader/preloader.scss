@@ -3,14 +3,19 @@
 @import "../../styles/_fonts";
 
 
-// .wrapper {
-//   transition:.4s;
-//   position: relative;
-//   width: 100%;
-//   // min-width: rem(940px) + rem(20px);
-//   // min-height: 100%;
-//   height: 100%;
-// }
+.wrapper {
+  transition:.4s;
+  position: relative;
+  width: 100%;
+  // min-width: rem(940px) + rem(20px);
+  // min-height: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.wrapper-hidden{
+  overflow: hidden;
+}
 .js-preloader-wrapper{
    width: 100%;
     height: 100vh;
@@ -18,7 +23,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    overflow: hidden;
+    // overflow: hidden;
     
 
 }
