@@ -239,7 +239,7 @@
 .navigation__link {
   font-family: Roboto;  
   color: #ffffff;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 1.42;
   text-transform: uppercase;
@@ -249,6 +249,10 @@
   transition: .5s;
   padding-right: 10px;
   padding-left: 10px;
+
+  @include tablets() {
+    font-size: 35px;
+  }
  
 }
 
