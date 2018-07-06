@@ -18,9 +18,17 @@
     bottom: -4px;
     margin: 0 auto;
 
-    // @include desktops() {
-    //     bottom: 110px;
-    // }
+    @include tablets() {
+        bottom: 217px;
+    }
+
+    @include laptops() {
+        bottom: -4px;
+    }
+
+    @include desktops() {
+        bottom: 110px;
+    }
 
 
   
