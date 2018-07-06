@@ -26,9 +26,9 @@
         bottom: -1%;
     }
 
-    // @include desktops() {
-    //     bottom: 110px;
-    // }
+    @include desktops() {
+        bottom: 12%;
+    }
 
 
   
