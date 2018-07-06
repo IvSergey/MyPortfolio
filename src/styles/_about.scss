@@ -22,9 +22,9 @@
         bottom: 217px;
     }
 
-    @include laptops() {
+    @media screen and (min-width: 800px) {
         bottom: -4px;
-    }
+  }
 
     @include desktops() {
         bottom: 110px;
