@@ -26,6 +26,10 @@
         bottom: -1%;
     }
 
+    @media screen and (min-width: 1300px) {
+        bottom: 12%;
+  }
+
     @include desktops() {
         bottom: 12%;
     }
